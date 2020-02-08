@@ -1,0 +1,17 @@
+mixin treeContainer
+  .container.mt-5
+    .row
+      .col-lg-12
+        ul.treeContainer
+          //- se inserta cada rama del arbol en la siqguiente forma
+          //- primero la imagen, el titulo, subtittulo, la description y por ultimo la direccion ya sea izquierda o derecha
+          +branchesContainer('1.jpg','Paso 1','Abrir caja','En la parte de arriba trae el abre fasil','left')
+          +branchesContainer('2.jpg','Paso 2','coloque la camara en el soporte blanco','Se arma la base','right')
+          li.treeContainer__items
+            .treeContainer__image
+              h4.treeContainer__titleEnd
+                | Be Part
+                br
+                | Of Our
+                br
+                | Story!

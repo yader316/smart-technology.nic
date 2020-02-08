@@ -1,0 +1,10 @@
+mixin branchesContainer(image,title,subTitle,paragraph,side)
+  li.treeContainer__items
+    .treeContainer__image
+      img.rounded-circle.img-fluid(src=`public/img/about/${image}` alt=`imagen-${title}`)
+    div(class=`treeContainer__panel-${side}`) 
+      .treeContainer__heading
+        h4.treeContainer__title #{title}
+        h4.treeContainer__subTitle #{subTitle}
+      .treeContainer__body
+        p #{paragraph}

@@ -1,0 +1,19 @@
+mixin Slider
+  .carousel.slide#carouselExampleIndicators(data-ride="carousel")
+    ol.carousel-indicators
+      li#carouselExampleIndicators.active(data-slide-to="0")
+      li#carouselExampleIndicators(data-slide-to="1")
+      li#carouselExampleIndicators(data-slide-to="2")
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src="http://placehold.it/400x300", alt="")
+      .carousel-item
+        img.d-block.w-100(src="http://placehold.it/400x300", alt="")
+      .carousel-item
+        img.d-block.w-100(src="http://placehold.it/400x300", alt="")
+    a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Previous
+    a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Next

@@ -1,0 +1,20 @@
+mixin Header
+  header.headerContainer
+    .headerContainer__banner.position-relative
+      .headerContainer__backgroundContainer.position-absolute
+        img.headerContainer__img.position-absolute.d-none.d-lg-block(src="public/img/logo-smart.png", alt="")
+    .headerContainer__navContainer      
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container
+        a.navbar-brand(href="#").visibleLogo
+          img(src="public/img/logo-smart-title.png" alt="logo").headerContainer__imgLogo-title
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
+        .collapse.navbar-collapse#navbar-1
+          ul.navbar-nav.mr-auto
+            +Items('inicio','#')
+            +ItemsDropdown
+            +Items('Sobre nosotro','#')
+            +Items('Contactenos','#')
+          form.form-inline.my-2.my-lg-0
+            input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+            button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+

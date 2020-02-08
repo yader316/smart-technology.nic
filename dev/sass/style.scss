@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+// tree
+@import "components/tree/treeContainer";
+// header
+@import "components/header";
+// ss
+@import "components/lasoContainer";
+// style del body
+.body-container{
+  overflow-x: hidden;
+}
+.eje{
+  border: 2px solid red;
+}
+
+@media (max-width:'991px'){
+  .visibleLogo{
+    display: block;
+  }
+  .headerContainer{
+    &__navContainer{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 99;
+    }
+    &__logoBanner{
+      left: 20px;
+      bottom: 20px;
+    }
+  }
+}

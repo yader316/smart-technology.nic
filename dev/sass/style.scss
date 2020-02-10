@@ -9,14 +9,27 @@
 @import "components/tree/treeContainer";
 // header
 @import "components/header";
-// ss
-@import "components/lasoContainer";
+// style slick
+@import "slick/slick";
+@import "slick/slick-theme";
+
+
+// Components
+@import "components/itemsTeam";
 // style del body
 .body-container{
   overflow-x: hidden;
 }
 .eje{
   border: 2px solid red;
+}
+// adatando el logo title al header
+@media (max-width:'1199px'){
+  .headerContainer{
+    &__imgLogo-title{
+      width: 170px;
+    }
+  }
 }
 
 @media (max-width:'991px'){

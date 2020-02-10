@@ -1,0 +1,30 @@
+mixin SliderTeam(name,cargo,photo,rede1,description1,rede2,description2,rede3,description3)
+  .team-member
+    img.mx-auto.rounded-circle.team-member__img(src=`public/img/team/${photo}`, alt=`foto de ${name}`)
+    h4.text-capitalize.team-member__title #{name}
+    p.text-capitalize.team-member__subTitle #{cargo}
+    ul.team-member__list.list-inline
+      li.list-inline-item: button.team-member__iconLink(
+        type="button" 
+        class="btn" 
+        data-toggle="popover"
+        data-trigger="focus"
+        data-placement="bottom" 
+        data-content= `${description1}`
+        ) #[i(class=`fab fa-${rede1}`)]
+      li.list-inline-item: button.team-member__iconLink(
+        type="button" 
+        class="btn" 
+        data-toggle="popover"
+        data-trigger="focus" 
+        data-placement="bottom"
+        data-content=`${description2}`
+        ) #[i(class=`fab fa-${rede2}`)]
+      li.list-inline-item: button.team-member__iconLink(
+        type="button" 
+        class="btn" 
+        data-toggle="popover"
+        data-trigger="focus" 
+        data-placement="bottom"
+        data-content=`${description3}`
+        ) #[i(class=`fa fa-${rede3}`)]

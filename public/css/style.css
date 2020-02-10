@@ -1,4 +1,5 @@
-/* line 1, dev/sass/style.css */
+@charset "UTF-8";
+/* line 2, dev/sass/style.css */
 *,
 *::before,
 *::after {
@@ -7,14 +8,14 @@
   box-sizing: border-box;
 }
 
-/* line 8, dev/sass/style.css */
+/* line 9, dev/sass/style.css */
 .treeContainer {
   position: relative;
   padding: 0;
   list-style: none;
 }
 
-/* line 12, dev/sass/style.css */
+/* line 13, dev/sass/style.css */
 .treeContainer::before {
   position: absolute;
   top: 0;
@@ -26,30 +27,30 @@
   background-color: gray;
 }
 
-/* line 21, dev/sass/style.css */
+/* line 22, dev/sass/style.css */
 .treeContainer__items {
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
 }
 
-/* line 25, dev/sass/style.css */
+/* line 26, dev/sass/style.css */
 .treeContainer__items::after, .treeContainer__items::before {
   display: table;
   content: ' ';
 }
 
-/* line 28, dev/sass/style.css */
+/* line 29, dev/sass/style.css */
 .treeContainer__items::after {
   clear: both;
 }
 
-/* line 30, dev/sass/style.css */
+/* line 31, dev/sass/style.css */
 .treeContainer__items:last-child {
   margin-bottom: 0;
 }
 
-/* line 32, dev/sass/style.css */
+/* line 33, dev/sass/style.css */
 .treeContainer__panel-left {
   position: relative;
   float: right;
@@ -58,7 +59,7 @@
   text-align: left;
 }
 
-/* line 38, dev/sass/style.css */
+/* line 39, dev/sass/style.css */
 .treeContainer__panel-left::before {
   right: auto;
   left: -15px;
@@ -66,7 +67,7 @@
   border-left-width: 0;
 }
 
-/* line 43, dev/sass/style.css */
+/* line 44, dev/sass/style.css */
 .treeContainer__panel-left::after {
   right: auto;
   left: -14px;
@@ -74,14 +75,14 @@
   border-left-width: 0;
 }
 
-/* line 48, dev/sass/style.css */
+/* line 49, dev/sass/style.css */
 .treeContainer__panel-right {
   float: right;
   padding: 0 20px 0 100px;
   text-align: left;
 }
 
-/* line 52, dev/sass/style.css */
+/* line 53, dev/sass/style.css */
 .treeContainer__panel-right::before {
   right: auto;
   left: -15px;
@@ -89,7 +90,7 @@
   border-left-width: 0;
 }
 
-/* line 57, dev/sass/style.css */
+/* line 58, dev/sass/style.css */
 .treeContainer__panel-right::after {
   right: auto;
   left: -14px;
@@ -97,7 +98,7 @@
   border-left-width: 0;
 }
 
-/* line 62, dev/sass/style.css */
+/* line 63, dev/sass/style.css */
 .treeContainer__image {
   position: absolute;
   z-index: 100;
@@ -112,18 +113,18 @@
   background-color: orange;
 }
 
-/* line 74, dev/sass/style.css */
+/* line 75, dev/sass/style.css */
 .treeContainer__title {
   margin-top: 0;
   color: inherit;
 }
 
-/* line 77, dev/sass/style.css */
+/* line 78, dev/sass/style.css */
 .treeContainer__subTitle {
   text-transform: none;
 }
 
-/* line 79, dev/sass/style.css */
+/* line 80, dev/sass/style.css */
 .treeContainer__titleEnd {
   font-size: 10px;
   line-height: 14px;
@@ -131,36 +132,36 @@
 }
 
 @media (min-width: 768px) {
-  /* line 85, dev/sass/style.css */
+  /* line 86, dev/sass/style.css */
   .treeContainer::before {
     left: 50%;
   }
-  /* line 87, dev/sass/style.css */
+  /* line 88, dev/sass/style.css */
   .treeContainer__items {
     min-height: 100px;
   }
-  /* line 89, dev/sass/style.css */
+  /* line 90, dev/sass/style.css */
   .treeContainer__panel-left {
     float: left;
     width: 41%;
     padding: 0 20px 20px 30px;
     text-align: right;
   }
-  /* line 94, dev/sass/style.css */
+  /* line 95, dev/sass/style.css */
   .treeContainer__panel-right {
     float: right;
     width: 41%;
     padding: 0 30px 20px 20px;
     text-align: left;
   }
-  /* line 99, dev/sass/style.css */
+  /* line 100, dev/sass/style.css */
   .treeContainer__image {
     left: 50%;
     width: 100px;
     height: 100px;
     margin-left: -50px;
   }
-  /* line 104, dev/sass/style.css */
+  /* line 105, dev/sass/style.css */
   .treeContainer__titleEnd {
     font-size: 13px;
     line-height: 18px;
@@ -169,21 +170,21 @@
 }
 
 @media (min-width: 992px) {
-  /* line 110, dev/sass/style.css */
+  /* line 111, dev/sass/style.css */
   .treeContainer__items {
     min-height: 150px;
   }
-  /* line 112, dev/sass/style.css */
+  /* line 113, dev/sass/style.css */
   .treeContainer__panel-left, .treeContainer__panel-right {
     padding: 0 20px 20px;
   }
-  /* line 114, dev/sass/style.css */
+  /* line 115, dev/sass/style.css */
   .treeContainer__image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
   }
-  /* line 118, dev/sass/style.css */
+  /* line 119, dev/sass/style.css */
   .treeContainer__titleEnd {
     font-size: 18px;
     line-height: 26px;
@@ -192,31 +193,31 @@
 }
 
 @media (min-width: 1200px) {
-  /* line 124, dev/sass/style.css */
+  /* line 125, dev/sass/style.css */
   .treeContainer__items {
     min-height: 170px;
   }
-  /* line 126, dev/sass/style.css */
+  /* line 127, dev/sass/style.css */
   .treeContainer__panel-left {
     padding: 0 20px 20px 100px;
   }
-  /* line 128, dev/sass/style.css */
+  /* line 129, dev/sass/style.css */
   .treeContainer__panel-right {
     padding: 0 100px 20px 20px;
   }
-  /* line 130, dev/sass/style.css */
+  /* line 131, dev/sass/style.css */
   .treeContainer__image {
     width: 170px;
     height: 170px;
     margin-left: -85px;
   }
-  /* line 134, dev/sass/style.css */
+  /* line 135, dev/sass/style.css */
   .treeContainer__titleEnd {
     margin-top: 40px;
   }
 }
 
-/* line 137, dev/sass/style.css */
+/* line 138, dev/sass/style.css */
 .headerContainer__banner {
   background-color: #333;
   background-image: url("https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg");
@@ -227,31 +228,31 @@
   height: 450px;
 }
 
-/* line 146, dev/sass/style.css */
+/* line 147, dev/sass/style.css */
 .headerContainer__backgroundContainer {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
 }
 
-/* line 151, dev/sass/style.css */
+/* line 152, dev/sass/style.css */
 .headerContainer__img {
   width: 50%;
   left: 100px;
   bottom: 50px;
 }
 
-/* line 156, dev/sass/style.css */
+/* line 157, dev/sass/style.css */
 .headerContainer__imgLogo-title {
   width: 200px;
 }
 
-/* line 159, dev/sass/style.css */
+/* line 160, dev/sass/style.css */
 .headerContainer__navContainer {
   background-color: #343a40;
 }
 
-/* line 162, dev/sass/style.css */
+/* line 163, dev/sass/style.css */
 .fixed-header {
   position: fixed;
   top: 0;
@@ -260,81 +261,402 @@
   z-index: 99;
 }
 
-/* line 169, dev/sass/style.css */
+/* line 170, dev/sass/style.css */
 .visibleLogo {
   display: none;
 }
 
-/* line 172, dev/sass/style.css */
+/* line 173, dev/sass/style.css */
 .visible-logo-title {
   display: block;
 }
 
-/* line 175, dev/sass/style.css */
-.lasoContainer {
-  margin: 60px;
-  padding: 40px;
+/* Slider */
+/* line 177, dev/sass/style.css */
+.slick-slider {
   position: relative;
-  top: 100px;
-  background-color: #17a2b8;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* line 181, dev/sass/style.css */
-.lasoContainer::before {
-  background-color: #808080;
-  transform: rotate(6deg);
+/* line 191, dev/sass/style.css */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 184, dev/sass/style.css */
-.lasoContainer::after {
-  background-color: #7bb801;
-  transform: rotate(-6deg);
+/* line 197, dev/sass/style.css */
+.slick-list:focus {
+  outline: none;
 }
 
-/* line 187, dev/sass/style.css */
-.lasoContainer::before, .lasoContainer::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
+/* line 199, dev/sass/style.css */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 203, dev/sass/style.css */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 211, dev/sass/style.css */
+.slick-track {
+  position: relative;
+  left: 0;
   top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 218, dev/sass/style.css */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+/* line 221, dev/sass/style.css */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 223, dev/sass/style.css */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 226, dev/sass/style.css */
+.slick-slide {
+  float: left;
+  min-height: 1px;
+  display: none;
+}
+
+/* line 230, dev/sass/style.css */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+/* line 232, dev/sass/style.css */
+.slick-slide img {
+  display: block;
+}
+
+/* line 234, dev/sass/style.css */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 236, dev/sass/style.css */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 238, dev/sass/style.css */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 240, dev/sass/style.css */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 242, dev/sass/style.css */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 247, dev/sass/style.css */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+/* line 251, dev/sass/style.css */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+/* line 263, dev/sass/style.css */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: all .3s ease-in-out;
+}
+
+/* line 282, dev/sass/style.css */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+/* line 288, dev/sass/style.css */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+  color: #17a2b8;
+}
+
+/* line 293, dev/sass/style.css */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 296, dev/sass/style.css */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 50px;
+  line-height: 1;
+  color: #212529;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 306, dev/sass/style.css */
+.slick-prev {
   left: 0;
 }
 
-/* line 196, dev/sass/style.css */
-.logoContainer,
-.logoContainer::before,
-.logoContainer::after {
-  border-top-right-radius: 20px 400px;
-  border-bottom-left-radius: 20px 400px;
-  border-top-left-radius: 20px 100px;
-  border-bottom-right-radius: 20px 100px;
+/* line 308, dev/sass/style.css */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: 0;
 }
 
-/* line 204, dev/sass/style.css */
+/* line 311, dev/sass/style.css */
+.slick-prev:before {
+  content: "❰";
+}
+
+/* line 313, dev/sass/style.css */
+[dir="rtl"] .slick-prev:before {
+  content: "❱";
+}
+
+/* line 316, dev/sass/style.css */
+.slick-next {
+  right: 0;
+}
+
+/* line 318, dev/sass/style.css */
+[dir="rtl"] .slick-next {
+  left: 0;
+  right: auto;
+}
+
+/* line 321, dev/sass/style.css */
+.slick-next:before {
+  content: "❱";
+}
+
+/* line 323, dev/sass/style.css */
+[dir="rtl"] .slick-next:before {
+  content: "❰";
+}
+
+/* Dots */
+/* line 327, dev/sass/style.css */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 330, dev/sass/style.css */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 339, dev/sass/style.css */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 347, dev/sass/style.css */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* line 359, dev/sass/style.css */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 361, dev/sass/style.css */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 363, dev/sass/style.css */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: #17a2b8;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 378, dev/sass/style.css */
+.slick-dots li.slick-active button:before {
+  color: #17a2b8;
+  opacity: 0.75;
+}
+
+/* line 382, dev/sass/style.css */
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 385, dev/sass/style.css */
+.team-member__img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 389, dev/sass/style.css */
+.team-member__title {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+/* line 393, dev/sass/style.css */
+.team-member__subTitle {
+  margin-top: 0;
+}
+
+/* line 395, dev/sass/style.css */
+.team-member__list {
+  margin-bottom: 0;
+}
+
+/* line 397, dev/sass/style.css */
+.team-member__iconLink {
+  font-size: 20px;
+  line-height: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+/* line 408, dev/sass/style.css */
+.team-member__iconLink:active, .team-member__iconLink:focus, .team-member__iconLink:hover {
+  background-color: #17a2b8;
+}
+
+/* line 411, dev/sass/style.css */
 .body-container {
   overflow-x: hidden;
 }
 
-/* line 207, dev/sass/style.css */
+/* line 414, dev/sass/style.css */
 .eje {
   border: 2px solid red;
 }
 
+@media (max-width: 1199px) {
+  /* line 418, dev/sass/style.css */
+  .headerContainer__imgLogo-title {
+    width: 170px;
+  }
+}
+
 @media (max-width: 991px) {
-  /* line 211, dev/sass/style.css */
+  /* line 422, dev/sass/style.css */
   .visibleLogo {
     display: block;
   }
-  /* line 213, dev/sass/style.css */
+  /* line 424, dev/sass/style.css */
   .headerContainer__navContainer {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
   }
-  /* line 218, dev/sass/style.css */
+  /* line 429, dev/sass/style.css */
   .headerContainer__logoBanner {
     left: 20px;
     bottom: 20px;

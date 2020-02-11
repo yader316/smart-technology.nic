@@ -1,2 +1,2 @@
-mixin Items(title,link)
-  li.nav-item: a(href=`${link}`).nav-link.text-capitalize #{title} 
+mixin Items(title,link,clase)
+  li.nav-item: a(href=`${link}` class=`${clase}`).nav-link.text-capitalize #{title} 

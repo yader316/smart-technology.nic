@@ -11,11 +11,14 @@
 @import "components/header";
 // style slick
 @import "slick/slick";
+@import "components/scroll-top";
 @import "slick/slick-theme";
+
 
 
 // Components
 @import "components/itemsTeam";
+@import "components/contact";
 // style del body
 .body-container{
   overflow-x: hidden;

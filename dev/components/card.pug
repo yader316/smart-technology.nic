@@ -3,6 +3,6 @@ mixin Card(title,url,clase,id)
     .card.h-100
       img.card-img-top(src="http://placehold.it/200x170", alt="")
       .card-body
-        h5.card-title #{title}
+        h5.card-title.text-capitalize #{title}
         .container.d-flex.justify-content-end.mt-5
           a.btn.btn-outline-info.text-capitalize(href=`${url}`) leer mas

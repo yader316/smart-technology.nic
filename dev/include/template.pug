@@ -1,6 +1,7 @@
 block config 
   include config
 
+include ../components/scroll-top
 include ../components/tree/branchesContainer
 include ../components/tree/treeContainer
 include ../components/items
@@ -9,6 +10,8 @@ include ../components/header
 include ../components/slider
 include ../components/card
 include ../components/sliderTeam
+include ../components/contact
+include ../components/footer
 
 doctype html(lang="en")
 head
@@ -22,7 +25,9 @@ head
   link(rel="stylesheet", href="public/css/style.css")
   block styles
 body.body-container
+  +ScrollTop
   block content
+
 block script
   script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
   script(src="public/js/slick.min.js")  
@@ -31,3 +36,4 @@ block script
   script(src="public/js/popovers.js") 
   script(src="public/js/scrollMenu.js")
   script(src="public/js/sliderCard.js")
+  script(src="public/js/scrollTop.js")

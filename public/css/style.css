@@ -387,8 +387,38 @@
   display: none;
 }
 
+/* line 250, dev/sass/style.css */
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+  background-color: #343a40;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all .3s ease-in;
+}
+
+/* line 261, dev/sass/style.css */
+.scroll-top:hover {
+  background-color: #808080;
+}
+
+/* line 263, dev/sass/style.css */
+.scroll-top:hover .scroll-top__img {
+  color: #7bb801;
+}
+
+/* line 265, dev/sass/style.css */
+.scroll-top__img {
+  font-size: 20px;
+  color: white;
+}
+
 /* Slider */
-/* line 251, dev/sass/style.css */
+/* line 270, dev/sass/style.css */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
@@ -403,7 +433,7 @@
 }
 
 /* Arrows */
-/* line 263, dev/sass/style.css */
+/* line 282, dev/sass/style.css */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -423,7 +453,7 @@
   transition: all .3s ease-in-out;
 }
 
-/* line 282, dev/sass/style.css */
+/* line 301, dev/sass/style.css */
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -432,7 +462,7 @@
   color: transparent;
 }
 
-/* line 288, dev/sass/style.css */
+/* line 307, dev/sass/style.css */
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
@@ -440,13 +470,13 @@
   color: #17a2b8;
 }
 
-/* line 293, dev/sass/style.css */
+/* line 312, dev/sass/style.css */
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
 }
 
-/* line 296, dev/sass/style.css */
+/* line 315, dev/sass/style.css */
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
@@ -458,55 +488,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 306, dev/sass/style.css */
+/* line 325, dev/sass/style.css */
 .slick-prev {
   left: 0;
 }
 
-/* line 308, dev/sass/style.css */
+/* line 327, dev/sass/style.css */
 [dir="rtl"] .slick-prev {
   left: auto;
   right: 0;
 }
 
-/* line 311, dev/sass/style.css */
+/* line 330, dev/sass/style.css */
 .slick-prev:before {
   content: "❰";
 }
 
-/* line 313, dev/sass/style.css */
+/* line 332, dev/sass/style.css */
 [dir="rtl"] .slick-prev:before {
   content: "❱";
 }
 
-/* line 316, dev/sass/style.css */
+/* line 335, dev/sass/style.css */
 .slick-next {
   right: 0;
 }
 
-/* line 318, dev/sass/style.css */
+/* line 337, dev/sass/style.css */
 [dir="rtl"] .slick-next {
   left: 0;
   right: auto;
 }
 
-/* line 321, dev/sass/style.css */
+/* line 340, dev/sass/style.css */
 .slick-next:before {
   content: "❱";
 }
 
-/* line 323, dev/sass/style.css */
+/* line 342, dev/sass/style.css */
 [dir="rtl"] .slick-next:before {
   content: "❰";
 }
 
 /* Dots */
-/* line 327, dev/sass/style.css */
+/* line 346, dev/sass/style.css */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
 
-/* line 330, dev/sass/style.css */
+/* line 349, dev/sass/style.css */
 .slick-dots {
   position: absolute;
   bottom: -25px;
@@ -518,7 +548,7 @@
   width: 100%;
 }
 
-/* line 339, dev/sass/style.css */
+/* line 358, dev/sass/style.css */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -529,7 +559,7 @@
   cursor: pointer;
 }
 
-/* line 347, dev/sass/style.css */
+/* line 366, dev/sass/style.css */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -544,17 +574,17 @@
   cursor: pointer;
 }
 
-/* line 359, dev/sass/style.css */
+/* line 378, dev/sass/style.css */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
 
-/* line 361, dev/sass/style.css */
+/* line 380, dev/sass/style.css */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
 
-/* line 363, dev/sass/style.css */
+/* line 382, dev/sass/style.css */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -572,43 +602,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 378, dev/sass/style.css */
+/* line 397, dev/sass/style.css */
 .slick-dots li.slick-active button:before {
   color: #17a2b8;
   opacity: 0.75;
 }
 
-/* line 382, dev/sass/style.css */
+/* line 401, dev/sass/style.css */
 .team-member {
   margin-bottom: 50px;
   text-align: center;
 }
 
-/* line 385, dev/sass/style.css */
+/* line 404, dev/sass/style.css */
 .team-member__img {
   width: 225px;
   height: 225px;
   border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 389, dev/sass/style.css */
+/* line 408, dev/sass/style.css */
 .team-member__title {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 
-/* line 393, dev/sass/style.css */
+/* line 412, dev/sass/style.css */
 .team-member__subTitle {
   margin-top: 0;
 }
 
-/* line 395, dev/sass/style.css */
+/* line 414, dev/sass/style.css */
 .team-member__list {
   margin-bottom: 0;
 }
 
-/* line 397, dev/sass/style.css */
+/* line 416, dev/sass/style.css */
 .team-member__iconLink {
   font-size: 20px;
   line-height: 50px;
@@ -622,41 +652,100 @@
   background-color: #212529;
 }
 
-/* line 408, dev/sass/style.css */
+/* line 427, dev/sass/style.css */
 .team-member__iconLink:active, .team-member__iconLink:focus, .team-member__iconLink:hover {
   background-color: #17a2b8;
 }
 
-/* line 411, dev/sass/style.css */
+/* line 430, dev/sass/style.css */
+.contactContainer {
+  padding: 100px 0;
+  background-color: #212529;
+  background-image: url("../../../public/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 436, dev/sass/style.css */
+.contactContainer__heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* line 441, dev/sass/style.css */
+.contactContainer__subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+}
+
+/* line 447, dev/sass/style.css */
+.contactContainer__form-group {
+  margin-bottom: 25px;
+}
+
+/* line 449, dev/sass/style.css */
+.contactContainer__txt-form-control, .contactContainer__txtArea-form-control {
+  padding: 20px;
+  width: 100%;
+}
+
+/* line 452, dev/sass/style.css */
+.contactContainer__txt-form-control {
+  height: auto;
+}
+
+/* line 454, dev/sass/style.css */
+.contactContainer__txt-form-control:focus {
+  box-shadow: none;
+}
+
+/* line 456, dev/sass/style.css */
+.contactContainer__txtArea-form-control {
+  height: 248px;
+  resize: none;
+}
+
+/* line 460, dev/sass/style.css */
+::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+
+/* line 464, dev/sass/style.css */
 .body-container {
   overflow-x: hidden;
 }
 
-/* line 414, dev/sass/style.css */
+/* line 467, dev/sass/style.css */
 .eje {
   border: 2px solid red;
 }
 
 @media (max-width: 1199px) {
-  /* line 418, dev/sass/style.css */
+  /* line 471, dev/sass/style.css */
   .headerContainer__imgLogo-title {
     width: 170px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 422, dev/sass/style.css */
+  /* line 475, dev/sass/style.css */
   .visibleLogo {
     display: block;
   }
-  /* line 424, dev/sass/style.css */
+  /* line 477, dev/sass/style.css */
   .headerContainer__navContainer {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
   }
-  /* line 429, dev/sass/style.css */
+  /* line 482, dev/sass/style.css */
   .headerContainer__logoBanner {
     left: 20px;
     bottom: 20px;

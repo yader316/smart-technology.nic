@@ -1,5 +1,5 @@
 mixin Card(title,precio,url,clase,id)
-  div(class=`col mb-4 ${clase}` id=`${id}`)
+  div(class=`col mb-4 ${clase}` id=`${id}` category=`precio-5099`)
     .card.h-100
       img.card-img-top(src="http://placehold.it/200x170", alt="")
       .card-body
@@ -7,3 +7,5 @@ mixin Card(title,precio,url,clase,id)
         p.card-text $ #{precio}
         .container.d-flex.justify-content-end.mt-5
           a.btn.btn-outline-info.text-capitalize(href=`${url}`) leer mas
+//- la clase categoria solo se va usar en el catalogo para la busqueda 
+//- la clase y el id solo se va usar en el home en la parte de los producto destacado para ocultar

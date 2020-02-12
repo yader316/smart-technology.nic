@@ -15,18 +15,18 @@
     <div class="headerContainer__banner position-relative">
       <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt=""/></div>
     </div>
-    <div class="headerContainer__navContainer">     
+    <div class="headerContainer__navContainer"> 
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="#"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbar-1">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="undefined nav-link text-capitalize" href="#">inicio </a></li>
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
             <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item text-capitalize" href="#">producto 1</a><a class="dropdown-item text-capitalize" href="#">producto 2</a></div>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">producto 1</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">producto 2</a></div>
             </li>
-            <li class="nav-item"><a class="undefined nav-link text-capitalize" href="#">Servicios </a></li>
-            <li class="nav-item"><a class="undefined nav-link text-capitalize" href="#">Sobre nosotro </a></li>
-            <li class="nav-item"><a class="js-scroll-trigger nav-link text-capitalize" href="#contact">Contactenos </a></li>
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Servicios </a></li>
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+            <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
@@ -40,7 +40,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="#">camara 1</a></td>
+                      <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
                     </tr>
                     <tr>
                       <td class="content-items"><a class="content-link text-capitalize" href="#">camara 2</a></td>
@@ -91,9 +91,7 @@
             <h1 class="text-capitalize">Tecnología avanzada para tus necesidades.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="container d-flex justify-content-end">
-              <button class="btn btn-outline-info mt-4">Catalogo</button>
-            </div>
+            <div class="container d-flex justify-content-end"><a class="btn btn-outline-info mt-4" href="catalogo.html">Catalogo</a></div>
           </div>
         </div>
       </div>
@@ -104,7 +102,7 @@
   </section>
   <section class="container mb-5">
     <div class="row row-cols-1 row-cols-md-3">
-      <div class="col mb-4 undefined" id="undefined">
+      <div class="col mb-4 undefined" id="undefined" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -113,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4 undefined" id="undefined">
+      <div class="col mb-4 undefined" id="undefined" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -122,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4 undefined" id="undefined">
+      <div class="col mb-4 undefined" id="undefined" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -131,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4 collapse" id="viewAll">
+      <div class="col mb-4 collapse" id="viewAll" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -140,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4 collapse" id="viewAll">
+      <div class="col mb-4 collapse" id="viewAll" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -149,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-4 collapse" id="viewAll">
+      <div class="col mb-4 collapse" id="viewAll" category="precio-5099">
         <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
           <div class="card-body">
             <h5 class="card-title text-capitalize">producto</h5>
@@ -284,24 +282,24 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-12">
-            <h4 class="mb-3 text-white text-uppercase font-weight-bold">smart technology</h4>
+            <h4 class="footerContainer__title mb-3 text-white text-uppercase font-weight-bold">smart technology</h4>
             <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div class="col-md-4 col-12">
-            <h4 class="mb-3 text-capitalize font-weight-bold text-white">productos</h4>
+            <h4 class="footerContainer__title mb-3 text-capitalize font-weight-bold text-white">productos</h4>
             <div class="row">
               <div class="col-6 text-center">
-                <p><a class="text-capitalize text-decoration-none text-white" href="#">producto-1</a></p>
-                <p><a class="text-capitalize text-decoration-none text-white" href="#">producto-2</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-1</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-2</a></p>
               </div>
               <div class="col-6 text-center"> 
-                <p><a class="text-capitalize text-decoration-none text-white" href="#">producto-3</a></p>
-                <p><a class="text-capitalize text-decoration-none text-white" href="#">producto-4</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-3</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-4</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-12">
-            <h4 class="mb-3 text-white text-uppercase font-weight-bold">contacto</h4>
+            <h4 class="footerContainer__title mb-3 text-white text-uppercase font-weight-bold">contacto</h4>
             <p class="text-white"><i class="mr-3 fas fa-home"></i> Galleria santo domingo segunda planta</p>
             <p class="text-white"><i class="fas fa-envelope mr-3"></i> smarttechnology@gmail.com</p>
             <p class="text-white"><i class="fab fa-facebook-f mr-3"></i> www.facebook.com/smarttechnologyni/</p>
@@ -313,7 +311,7 @@
     </div>
     <div class="footerContainer__footer p-4" style="background-color:#f8f9fa;">
       <div class="container text-center"> 
-        <p></p>&copy; 2020 |<i class="fa fa-value" aria-hidden="true">&nbsp;</i><a class="text-capitalize text-decoration-none text-dark font-weight-bold" href="#">smart technology  </a>
+        <p></p>&copy; 2020 |<i class="fa fa-value" aria-hidden="true">&nbsp;</i><a class="text-capitalize text-decoration-none text-dark font-weight-bold" href="#">smart technology | soluciones inteligentes</a>
       </div>
     </div>
   </footer>

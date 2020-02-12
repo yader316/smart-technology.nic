@@ -1,0 +1,12 @@
+.showContainer{
+  &__title{
+    padding: 30px 0;
+    background-color: #aba7a3;
+    color: white;
+    margin-bottom: 1rem;
+  }
+}
+// darle la animacion cuando da click en los botones buscar en el catalogo
+.product-item{
+	transition: all .4s;
+}

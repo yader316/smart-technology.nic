@@ -1,22 +1,23 @@
 mixin Footer  
+  +Contact
   footer.footerContainer
     .footerContainer__body.pt-4.pb-4(style="background-color:#343a40;")
       .container
         .row
           .col-md-4.col-12
-            h4.mb-3.text-white.text-uppercase.font-weight-bold smart technology
+            h4.footerContainer__title.mb-3.text-white.text-uppercase.font-weight-bold smart technology
             p.text-white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           .col-md-4.col-12
-            h4.mb-3.text-capitalize.font-weight-bold.text-white productos
+            h4.footerContainer__title.mb-3.text-capitalize.font-weight-bold.text-white productos
             .row
               .col-6.text-center
-                p: a(href="#").text-capitalize.text-decoration-none.text-white producto-1
-                p: a(href="#").text-capitalize.text-decoration-none.text-white producto-2
+                p: a(href="#").footerContainer__link.text-capitalize.text-decoration-none.text-white producto-1
+                p: a(href="#").footerContainer__link.text-capitalize.text-decoration-none.text-white producto-2
               .col-6.text-center  
-                p: a(href="#").text-capitalize.text-decoration-none.text-white producto-3
-                p: a(href="#").text-capitalize.text-decoration-none.text-white producto-4
+                p: a(href="#").footerContainer__link.text-capitalize.text-decoration-none.text-white producto-3
+                p: a(href="#").footerContainer__link.text-capitalize.text-decoration-none.text-white producto-4
           .col-md-4.col-12
-            h4.mb-3.text-white.text-uppercase.font-weight-bold contacto
+            h4.footerContainer__title.mb-3.text-white.text-uppercase.font-weight-bold contacto
             p.text-white #[i.mr-3.fas.fa-home] Galleria santo domingo segunda planta
             p.text-white #[i.fas.fa-envelope.mr-3] smarttechnology@gmail.com
             p.text-white #[i.fab.fa-facebook-f.mr-3] www.facebook.com/smarttechnologyni/
@@ -27,4 +28,4 @@ mixin Footer
         p
         | &copy; 2020 |
         i.fa.fa-value(aria-hidden='true') &nbsp;
-        a(href='#').text-capitalize.text-decoration-none.text-dark.font-weight-bold smart technology  
+        a(href='#').text-capitalize.text-decoration-none.text-dark.font-weight-bold smart technology | soluciones inteligentes

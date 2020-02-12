@@ -1,0 +1,13 @@
+mixin Menu(clases)
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container
+    a.navbar-brand(href="#" class=`${clases}`)
+      img(src="public/img/logo-smart-title.png" alt="logo").headerContainer__imgLogo-title
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
+    .collapse.navbar-collapse#navbar-1
+      ul.navbar-nav.mr-auto
+        +Items('inicio','index.html')
+        +ItemsDropdown
+        +Items('Servicios','#')
+        +Items('Sobre nosotro','#')
+        +Items('Contactenos','#contact','js-scroll-trigger')
+      +Search

@@ -8,7 +8,10 @@
 // tree
 @import "components/tree/treeContainer";
 // header
+@import "components/itemsMenu";
 @import "components/header";
+// footer
+@import "components/footer";
 // style slick
 @import "slick/slick";
 @import "components/scroll-top";
@@ -18,6 +21,7 @@
 @import "components/itemsTeam";
 @import "components/contact";
 @import "components/buscar";
+@import "components/catalogo";
 // style del body
 .body-container{
   overflow-x: hidden;

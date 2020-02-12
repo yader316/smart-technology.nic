@@ -1,0 +1,40 @@
+mixin AccordionSearchProduct
+  #accordion.category_list
+    .card.mb-2
+      div(class="card-header p-0" id="accordion0")
+        button.w-100.category_item(class="list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" category="all") todos
+    .card.mb-2
+      div(class="card-header p-0" id="accordion1")
+        button.w-100(class="list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" data-toggle="collapse" data-target="#collapseOne") precios
+          span.dropdown-toggle
+      div(id="collapseOne" class="collapse" aria-labelledby="accordion1" data-parent="#accordion")
+        .card-body.p-0
+          ul.list-group.list-group-flush
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="precio-09") $00.00 - $09.99
+                span.badge.badge-primary.badge-pill 12
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="precio-1049") $10.00 - $49.99
+                span.badge.badge-primary.badge-pill 5
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="precio-5099") $50.00 - $99.99
+                span.badge.badge-primary.badge-pill 3
+    .card.mb-2
+      div(class="card-header p-0" id="accordion2")
+        button.w-100(class="list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" data-toggle="collapse" data-target="#collapseTwo") producto
+          span.dropdown-toggle
+      div(id="collapseTwo" class="collapse" aria-labelledby="accordion2" data-parent="#accordion")
+        .card-body.p-0
+          ul.list-group.list-group-flush
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="sensore") sensores
+                span.badge.badge-primary.badge-pill 3
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="camara") camaras
+                span.badge.badge-primary.badge-pill 10
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="bombio") bombios
+                span.badge.badge-primary.badge-pill 2
+            li.list-group-item
+              button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="accesorio") accesorios
+                span.badge.badge-primary.badge-pill 8

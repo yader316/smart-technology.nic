@@ -1,0 +1,24 @@
+.footerContainer{
+  &__title{
+    padding-bottom: 5px;
+    background-image: linear-gradient(#7bb801,#7bb801);
+    background: {
+      position: 0% 100%;
+      repeat: no-repeat;
+      size: 25% 3px;
+    };
+  }
+  &__link{
+    padding-bottom: 5px;
+    background-image: linear-gradient(#7bb801,#7bb801);
+    background: {
+      position: 0% 100%;
+      repeat: no-repeat;
+      size: 0% 3px;
+    };
+    transition: background-size .3s;
+    &:hover{
+      background-size: 100% 3px;
+    }
+  }
+}

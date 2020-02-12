@@ -218,6 +218,27 @@
 }
 
 /* line 138, dev/sass/style.css */
+.itemsMenu__items {
+  padding-bottom: 5px;
+  background-image: linear-gradient(#7bb801, #7bb801);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+/* line 145, dev/sass/style.css */
+.itemsMenu__items:hover {
+  background-size: 90% 2px;
+}
+
+/* line 148, dev/sass/style.css */
+.itemsMenu__dropdown:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* line 152, dev/sass/style.css */
 .headerContainer__banner {
   background-color: #333;
   background-image: url("https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg");
@@ -228,31 +249,31 @@
   height: 450px;
 }
 
-/* line 147, dev/sass/style.css */
+/* line 161, dev/sass/style.css */
 .headerContainer__backgroundContainer {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
 }
 
-/* line 152, dev/sass/style.css */
+/* line 166, dev/sass/style.css */
 .headerContainer__img {
-  width: 50%;
+  width: 35%;
   left: 100px;
   bottom: 50px;
 }
 
-/* line 157, dev/sass/style.css */
+/* line 171, dev/sass/style.css */
 .headerContainer__imgLogo-title {
   width: 200px;
 }
 
-/* line 160, dev/sass/style.css */
+/* line 174, dev/sass/style.css */
 .headerContainer__navContainer {
   background-color: #343a40;
 }
 
-/* line 163, dev/sass/style.css */
+/* line 177, dev/sass/style.css */
 .fixed-header {
   position: fixed;
   top: 0;
@@ -261,18 +282,42 @@
   z-index: 99;
 }
 
-/* line 170, dev/sass/style.css */
+/* line 184, dev/sass/style.css */
 .visibleLogo {
   display: none;
 }
 
-/* line 173, dev/sass/style.css */
+/* line 187, dev/sass/style.css */
 .visible-logo-title {
   display: block;
 }
 
+/* line 190, dev/sass/style.css */
+.footerContainer__title {
+  padding-bottom: 5px;
+  background-image: linear-gradient(#7bb801, #7bb801);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 25% 3px;
+}
+
+/* line 197, dev/sass/style.css */
+.footerContainer__link {
+  padding-bottom: 5px;
+  background-image: linear-gradient(#7bb801, #7bb801);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size .3s;
+}
+
+/* line 204, dev/sass/style.css */
+.footerContainer__link:hover {
+  background-size: 100% 3px;
+}
+
 /* Slider */
-/* line 177, dev/sass/style.css */
+/* line 208, dev/sass/style.css */
 .slick-slider {
   position: relative;
   display: block;
@@ -286,7 +331,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 191, dev/sass/style.css */
+/* line 222, dev/sass/style.css */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -295,24 +340,24 @@
   padding: 0;
 }
 
-/* line 197, dev/sass/style.css */
+/* line 228, dev/sass/style.css */
 .slick-list:focus {
   outline: none;
 }
 
-/* line 199, dev/sass/style.css */
+/* line 230, dev/sass/style.css */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 203, dev/sass/style.css */
+/* line 234, dev/sass/style.css */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 211, dev/sass/style.css */
+/* line 242, dev/sass/style.css */
 .slick-track {
   position: relative;
   left: 0;
@@ -322,72 +367,72 @@
   margin-right: auto;
 }
 
-/* line 218, dev/sass/style.css */
+/* line 249, dev/sass/style.css */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
 
-/* line 221, dev/sass/style.css */
+/* line 252, dev/sass/style.css */
 .slick-track:after {
   clear: both;
 }
 
-/* line 223, dev/sass/style.css */
+/* line 254, dev/sass/style.css */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 226, dev/sass/style.css */
+/* line 257, dev/sass/style.css */
 .slick-slide {
   float: left;
   min-height: 1px;
   display: none;
 }
 
-/* line 230, dev/sass/style.css */
+/* line 261, dev/sass/style.css */
 [dir="rtl"] .slick-slide {
   float: right;
 }
 
-/* line 232, dev/sass/style.css */
+/* line 263, dev/sass/style.css */
 .slick-slide img {
   display: block;
 }
 
-/* line 234, dev/sass/style.css */
+/* line 265, dev/sass/style.css */
 .slick-slide.slick-loading img {
   display: none;
 }
 
-/* line 236, dev/sass/style.css */
+/* line 267, dev/sass/style.css */
 .slick-slide.dragging img {
   pointer-events: none;
 }
 
-/* line 238, dev/sass/style.css */
+/* line 269, dev/sass/style.css */
 .slick-initialized .slick-slide {
   display: block;
 }
 
-/* line 240, dev/sass/style.css */
+/* line 271, dev/sass/style.css */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
 
-/* line 242, dev/sass/style.css */
+/* line 273, dev/sass/style.css */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 247, dev/sass/style.css */
+/* line 278, dev/sass/style.css */
 .slick-arrow.slick-hidden {
   display: none;
 }
 
-/* line 250, dev/sass/style.css */
+/* line 281, dev/sass/style.css */
 .scroll-top {
   display: none;
   position: fixed;
@@ -401,24 +446,24 @@
   transition: all .3s ease-in;
 }
 
-/* line 261, dev/sass/style.css */
+/* line 292, dev/sass/style.css */
 .scroll-top:hover {
   background-color: #808080;
 }
 
-/* line 263, dev/sass/style.css */
+/* line 294, dev/sass/style.css */
 .scroll-top:hover .scroll-top__img {
   color: #7bb801;
 }
 
-/* line 265, dev/sass/style.css */
+/* line 296, dev/sass/style.css */
 .scroll-top__img {
   font-size: 20px;
   color: white;
 }
 
 /* Slider */
-/* line 270, dev/sass/style.css */
+/* line 301, dev/sass/style.css */
 .slick-loading .slick-list {
   background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
@@ -433,7 +478,7 @@
 }
 
 /* Arrows */
-/* line 282, dev/sass/style.css */
+/* line 313, dev/sass/style.css */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -453,7 +498,7 @@
   transition: all .3s ease-in-out;
 }
 
-/* line 301, dev/sass/style.css */
+/* line 332, dev/sass/style.css */
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -462,7 +507,7 @@
   color: transparent;
 }
 
-/* line 307, dev/sass/style.css */
+/* line 338, dev/sass/style.css */
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
@@ -470,13 +515,13 @@
   color: #17a2b8;
 }
 
-/* line 312, dev/sass/style.css */
+/* line 343, dev/sass/style.css */
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
 }
 
-/* line 315, dev/sass/style.css */
+/* line 346, dev/sass/style.css */
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
@@ -488,55 +533,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 325, dev/sass/style.css */
+/* line 356, dev/sass/style.css */
 .slick-prev {
   left: 0;
 }
 
-/* line 327, dev/sass/style.css */
+/* line 358, dev/sass/style.css */
 [dir="rtl"] .slick-prev {
   left: auto;
   right: 0;
 }
 
-/* line 330, dev/sass/style.css */
+/* line 361, dev/sass/style.css */
 .slick-prev:before {
   content: "❰";
 }
 
-/* line 332, dev/sass/style.css */
+/* line 363, dev/sass/style.css */
 [dir="rtl"] .slick-prev:before {
   content: "❱";
 }
 
-/* line 335, dev/sass/style.css */
+/* line 366, dev/sass/style.css */
 .slick-next {
   right: 0;
 }
 
-/* line 337, dev/sass/style.css */
+/* line 368, dev/sass/style.css */
 [dir="rtl"] .slick-next {
   left: 0;
   right: auto;
 }
 
-/* line 340, dev/sass/style.css */
+/* line 371, dev/sass/style.css */
 .slick-next:before {
   content: "❱";
 }
 
-/* line 342, dev/sass/style.css */
+/* line 373, dev/sass/style.css */
 [dir="rtl"] .slick-next:before {
   content: "❰";
 }
 
 /* Dots */
-/* line 346, dev/sass/style.css */
+/* line 377, dev/sass/style.css */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
 
-/* line 349, dev/sass/style.css */
+/* line 380, dev/sass/style.css */
 .slick-dots {
   position: absolute;
   bottom: -25px;
@@ -548,7 +593,7 @@
   width: 100%;
 }
 
-/* line 358, dev/sass/style.css */
+/* line 389, dev/sass/style.css */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -559,7 +604,7 @@
   cursor: pointer;
 }
 
-/* line 366, dev/sass/style.css */
+/* line 397, dev/sass/style.css */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -574,17 +619,17 @@
   cursor: pointer;
 }
 
-/* line 378, dev/sass/style.css */
+/* line 409, dev/sass/style.css */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
 
-/* line 380, dev/sass/style.css */
+/* line 411, dev/sass/style.css */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
 
-/* line 382, dev/sass/style.css */
+/* line 413, dev/sass/style.css */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -602,43 +647,43 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 397, dev/sass/style.css */
+/* line 428, dev/sass/style.css */
 .slick-dots li.slick-active button:before {
   color: #17a2b8;
   opacity: 0.75;
 }
 
-/* line 401, dev/sass/style.css */
+/* line 432, dev/sass/style.css */
 .team-member {
   margin-bottom: 50px;
   text-align: center;
 }
 
-/* line 404, dev/sass/style.css */
+/* line 435, dev/sass/style.css */
 .team-member__img {
   width: 225px;
   height: 225px;
   border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 408, dev/sass/style.css */
+/* line 439, dev/sass/style.css */
 .team-member__title {
   margin-top: 25px;
   margin-bottom: 0;
   text-transform: none;
 }
 
-/* line 412, dev/sass/style.css */
+/* line 443, dev/sass/style.css */
 .team-member__subTitle {
   margin-top: 0;
 }
 
-/* line 414, dev/sass/style.css */
+/* line 445, dev/sass/style.css */
 .team-member__list {
   margin-bottom: 0;
 }
 
-/* line 416, dev/sass/style.css */
+/* line 447, dev/sass/style.css */
 .team-member__iconLink {
   font-size: 20px;
   line-height: 50px;
@@ -652,12 +697,12 @@
   background-color: #212529;
 }
 
-/* line 427, dev/sass/style.css */
+/* line 458, dev/sass/style.css */
 .team-member__iconLink:active, .team-member__iconLink:focus, .team-member__iconLink:hover {
   background-color: #17a2b8;
 }
 
-/* line 430, dev/sass/style.css */
+/* line 461, dev/sass/style.css */
 .contactContainer {
   padding: 100px 0;
   background-color: #212529;
@@ -666,7 +711,7 @@
   background-position: center;
 }
 
-/* line 436, dev/sass/style.css */
+/* line 467, dev/sass/style.css */
 .contactContainer__heading {
   font-size: 40px;
   margin-top: 0;
@@ -674,7 +719,7 @@
   color: white;
 }
 
-/* line 441, dev/sass/style.css */
+/* line 472, dev/sass/style.css */
 .contactContainer__subheading {
   font-size: 16px;
   font-weight: 400;
@@ -683,65 +728,67 @@
   text-transform: none;
 }
 
-/* line 447, dev/sass/style.css */
+/* line 478, dev/sass/style.css */
 .contactContainer__form-group {
   margin-bottom: 25px;
 }
 
-/* line 449, dev/sass/style.css */
+/* line 480, dev/sass/style.css */
 .contactContainer__txt-form-control, .contactContainer__txtArea-form-control {
   padding: 20px;
   width: 100%;
 }
 
-/* line 452, dev/sass/style.css */
+/* line 483, dev/sass/style.css */
 .contactContainer__txt-form-control {
   height: auto;
 }
 
-/* line 454, dev/sass/style.css */
+/* line 485, dev/sass/style.css */
 .contactContainer__txt-form-control:focus {
   box-shadow: none;
 }
 
-/* line 456, dev/sass/style.css */
+/* line 487, dev/sass/style.css */
 .contactContainer__txtArea-form-control {
   height: 248px;
   resize: none;
 }
 
-/* line 460, dev/sass/style.css */
+/* line 491, dev/sass/style.css */
 ::-webkit-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
 
-/* line 464, dev/sass/style.css */
+/* line 495, dev/sass/style.css */
 #input-search {
   width: 220px;
   height: 40px;
   text-indent: 10px;
 }
 
-/* line 469, dev/sass/style.css */
+/* line 500, dev/sass/style.css */
 .content-search {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 505px;
   display: none;
+  z-index: 99;
 }
 
-/* line 476, dev/sass/style.css */
+/* line 508, dev/sass/style.css */
 .position-search-table {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 56px;
   display: none;
+  z-index: 99;
 }
 
-/* line 483, dev/sass/style.css */
+/* line 516, dev/sass/style.css */
 .content-table {
   width: 30%;
   max-height: 200px;
@@ -752,29 +799,29 @@
   overflow-x: hidden;
 }
 
-/* line 492, dev/sass/style.css */
+/* line 525, dev/sass/style.css */
 .content-table table {
   width: 100%;
 }
 
-/* line 495, dev/sass/style.css */
+/* line 528, dev/sass/style.css */
 .content-items {
   transition: all .3s ease-in-out;
 }
 
-/* line 497, dev/sass/style.css */
+/* line 530, dev/sass/style.css */
 .content-items:hover {
   background-color: rgba(5, 183, 211, 0.3);
 }
 
-/* line 499, dev/sass/style.css */
+/* line 532, dev/sass/style.css */
 .content-items:hover .content-link {
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 504, dev/sass/style.css */
+/* line 537, dev/sass/style.css */
 .content-link,
 .dataTables_empty {
   display: block;
@@ -783,7 +830,7 @@
   text-decoration: none;
 }
 
-/* line 511, dev/sass/style.css */
+/* line 544, dev/sass/style.css */
 #table_length,
 #table_filter,
 #table_info,
@@ -791,49 +838,62 @@
   display: none;
 }
 
-/* line 517, dev/sass/style.css */
+/* line 550, dev/sass/style.css */
+.showContainer__title {
+  padding: 30px 0;
+  background-color: #aba7a3;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* line 556, dev/sass/style.css */
+.product-item {
+  transition: all .4s;
+}
+
+/* line 559, dev/sass/style.css */
 .body-container {
   overflow-x: hidden;
 }
 
-/* line 520, dev/sass/style.css */
+/* line 562, dev/sass/style.css */
 .eje {
   border: 2px solid red;
 }
 
 @media (max-width: 1199px) {
-  /* line 524, dev/sass/style.css */
+  /* line 566, dev/sass/style.css */
   .headerContainer__imgLogo-title {
     width: 170px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 528, dev/sass/style.css */
+  /* line 570, dev/sass/style.css */
   .visibleLogo {
     display: block;
   }
-  /* line 530, dev/sass/style.css */
+  /* line 572, dev/sass/style.css */
   .headerContainer__navContainer {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
   }
-  /* line 535, dev/sass/style.css */
+  /* line 577, dev/sass/style.css */
   .headerContainer__logoBanner {
     left: 20px;
     bottom: 20px;
   }
-  /* line 538, dev/sass/style.css */
+  /* line 580, dev/sass/style.css */
   .content-search {
     top: 311px;
   }
-  /* line 540, dev/sass/style.css */
+  /* line 582, dev/sass/style.css */
   .position-search-table {
     top: 312px;
   }
-  /* line 542, dev/sass/style.css */
+  /* line 584, dev/sass/style.css */
   .content-table {
     width: 80%;
   }

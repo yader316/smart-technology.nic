@@ -1,0 +1,40 @@
+extends include/template
+
+append config
+  -siteName= 'Catalogo';
+prepend styles
+  //- van los link
+block content
+  +Header
+  section.showContainer.mb-5
+    h1.text-center.showContainer__title Tienda
+    .container
+      .row
+        .col-lg-3.col-md-5.col-12
+          .showContainer__search.mb-3
+            nav(class="navbar navbar-dark bg-dark")
+              a(class="navbar-brand text-capitalize" href="#") buscar por
+              button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-2").d-md-none #[span.fa.fa-ellipsis-v]
+              .collapse.navbar-collapse#navbar-2.d-md-block
+                +AccordionSearchProduct
+        .col-lg-9.col-md-7.col-12
+          .products-list.row.row-cols-1.row-cols-sm-2.row-cols-md-2.row-cols-lg-3
+            +CardCatalogoPrice('camara 90 grado','9.99','#','camara')
+            +CardCatalogoPrice('camara 360','04.10','#','camara')
+            +CardCatalogoPrice('bombio 12v','02.12','#','bombio')
+            +CardCatalogoPrice('bombio 6v','10.10','#','bombio')
+            +CardCatalogoPrice('sensor','20.30','#','sensore')
+            +CardCatalogoPrice('bombio','40.00','#','bombio')
+            +CardCatalogoPrice('cable 12v','10.0','#','accesorio')
+            +CardCatalogoPrice('camara','20.0','#','camara')
+            +CardCatalogoPrice('breaker 12v','60.0','#','accesorio')
+            +CardCatalogoPrice('breaker','70.0','#','accesorio')
+            +CardCatalogoPrice('caja de breaker','20.0','#','accesorio')
+            +CardCatalogoPrice('sensor','100.0','#','sensore')
+            +CardCatalogoPrice('tomas corrientes','30.0','#','accesorio')
+            +CardCatalogoPrice('camara 180 grado','40.0','#','camara')
+            +CardCatalogoPrice('sensor','01.0','#','sensore')
+            +CardCatalogoPrice('sensor','01.10','#','sensore')
+  +Footer
+block script
+  script(src="public/js/searchCatalogo.js")

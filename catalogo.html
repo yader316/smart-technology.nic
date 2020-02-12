@@ -1,0 +1,379 @@
+<!DOCTYPE html(lang="en")>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="description" content=" "/>
+  <title>Smart - Catalogo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="public/css/style.css"/>
+</head>
+<body class="body-container">
+  <div class="scroll-top" onclick="topFunction()" id="myBtn"><i class="fa fa-chevron-up scroll-top__img"> </i></div>
+  <header class="headerContainer">
+    <div class="headerContainer__banner position-relative">
+      <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt=""/></div>
+    </div>
+    <div class="headerContainer__navContainer"> 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="#"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
+            <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">producto 1</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">producto 2</a></div>
+            </li>
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Servicios </a></li>
+            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+            <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">camara 2</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">enchufle 3</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">sensor</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">camar 360</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">cable 1</a></td>
+                    </tr>
+                    <tr>
+                      <td class="content-items"><a class="content-link text-capitalize" href="#">bombio</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="showContainer mb-5">
+    <h1 class="text-center showContainer__title">Tienda</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-12">
+          <div class="showContainer__search mb-3">
+            <nav class="navbar navbar-dark bg-dark"><a class="navbar-brand text-capitalize" href="#">buscar por</a>
+              <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbar-2"><span class="fa fa-ellipsis-v"></span></button>
+              <div class="collapse navbar-collapse d-md-block" id="navbar-2">
+                <div class="category_list" id="accordion">
+                  <div class="card mb-2">
+                    <div class="card-header p-0" id="accordion0">
+                      <button class="w-100 category_item list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" category="all">todos</button>
+                    </div>
+                  </div>
+                  <div class="card mb-2">
+                    <div class="card-header p-0" id="accordion1">
+                      <button class="w-100 list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" data-toggle="collapse" data-target="#collapseOne">precios<span class="dropdown-toggle"></span></button>
+                    </div>
+                    <div class="collapse" id="collapseOne" aria-labelledby="accordion1" data-parent="#accordion">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center" category="precio-09">$00.00 - $09.99<span class="badge badge-primary badge-pill">12</span></button>
+                          </li>
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center" category="precio-1049">$10.00 - $49.99<span class="badge badge-primary badge-pill">5</span></button>
+                          </li>
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center" category="precio-5099">$50.00 - $99.99<span class="badge badge-primary badge-pill">3</span></button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-2">
+                    <div class="card-header p-0" id="accordion2">
+                      <button class="w-100 list-group-item text-decoration-none d-flex justify-content-between align-items-center text-capitalize" data-toggle="collapse" data-target="#collapseTwo">producto<span class="dropdown-toggle"></span></button>
+                    </div>
+                    <div class="collapse" id="collapseTwo" aria-labelledby="accordion2" data-parent="#accordion">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="sensore">sensores<span class="badge badge-primary badge-pill">3</span></button>
+                          </li>
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="camara">camaras<span class="badge badge-primary badge-pill">10</span></button>
+                          </li>
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="bombio">bombios<span class="badge badge-primary badge-pill">2</span></button>
+                          </li>
+                          <li class="list-group-item">
+                            <button class="btn w-100 category_item list-group-item-action d-flex justify-content-between align-items-center text-capitalize" nameProduct="accesorio">accesorios<span class="badge badge-primary badge-pill">8</span></button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-7 col-12">
+          <div class="products-list row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-4 product-item" category="precio-09" nameProduct="camara">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">camara 90 grado</h5>
+                  <p class="card-text">$ 9.99</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-09" nameProduct="camara">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">camara 360</h5>
+                  <p class="card-text">$ 04.10</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-09" nameProduct="bombio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">bombio 12v</h5>
+                  <p class="card-text">$ 02.12</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="bombio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">bombio 6v</h5>
+                  <p class="card-text">$ 10.10</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="sensore">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">sensor</h5>
+                  <p class="card-text">$ 20.30</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="bombio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">bombio</h5>
+                  <p class="card-text">$ 40.00</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="accesorio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">cable 12v</h5>
+                  <p class="card-text">$ 10.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="camara">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">camara</h5>
+                  <p class="card-text">$ 20.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-5099" nameProduct="accesorio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">breaker 12v</h5>
+                  <p class="card-text">$ 60.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-5099" nameProduct="accesorio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">breaker</h5>
+                  <p class="card-text">$ 70.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="accesorio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">caja de breaker</h5>
+                  <p class="card-text">$ 20.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-5099" nameProduct="sensore">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">sensor</h5>
+                  <p class="card-text">$ 100.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="accesorio">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">tomas corrientes</h5>
+                  <p class="card-text">$ 30.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-1049" nameProduct="camara">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">camara 180 grado</h5>
+                  <p class="card-text">$ 40.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-09" nameProduct="sensore">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">sensor</h5>
+                  <p class="card-text">$ 01.0</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4 product-item" category="precio-09" nameProduct="sensore">
+              <div class="card h-100"><img class="card-img-top" src="http://placehold.it/200x170" alt=""/>
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">sensor</h5>
+                  <p class="card-text">$ 01.10</p>
+                  <div class="container d-flex justify-content-end mt-5"><a class="btn btn-outline-info text-capitalize" href="#">leer mas</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contactContainer" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="contactContainer__heading text-uppercase">contactenos</h2>
+          <h3 class="contactContainer__subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" action=""> 
+            <div class="row">
+              <div class="col-md-6">
+                <div class="contactContainer__form-group">
+                  <input class="contactContainer__txt-form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name."/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="contactContainer__form-group">
+                  <input class="contactContainer__txt-form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address."/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="contactContainer__form-group">
+                  <input class="contactContainer__txt-form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number."/>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contactContainer__form-group">
+                  <textarea class="contactContainer__txtArea-form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center w-100"> 
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button class="btn btn-primary btn-lg text-uppercase p-3" id="sendMessageButton" type="submit">Enviar Mensaje</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footerContainer">
+    <div class="footerContainer__body pt-4 pb-4" style="background-color:#343a40;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <h4 class="footerContainer__title mb-3 text-white text-uppercase font-weight-bold">smart technology</h4>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-md-4 col-12">
+            <h4 class="footerContainer__title mb-3 text-capitalize font-weight-bold text-white">productos</h4>
+            <div class="row">
+              <div class="col-6 text-center">
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-1</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-2</a></p>
+              </div>
+              <div class="col-6 text-center"> 
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-3</a></p>
+                <p><a class="footerContainer__link text-capitalize text-decoration-none text-white" href="#">producto-4</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <h4 class="footerContainer__title mb-3 text-white text-uppercase font-weight-bold">contacto</h4>
+            <p class="text-white"><i class="mr-3 fas fa-home"></i> Galleria santo domingo segunda planta</p>
+            <p class="text-white"><i class="fas fa-envelope mr-3"></i> smarttechnology@gmail.com</p>
+            <p class="text-white"><i class="fab fa-facebook-f mr-3"></i> www.facebook.com/smarttechnologyni/</p>
+            <p class="text-white"><i class="fas fa-phone mr-3"></i> +505 8418 1496</p>
+            <p class="text-white"><i class="fab fa-whatsapp mr-3"></i> +505 8326 1118</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerContainer__footer p-4" style="background-color:#f8f9fa;">
+      <div class="container text-center"> 
+        <p></p>&copy; 2020 |<i class="fa fa-value" aria-hidden="true">&nbsp;</i><a class="text-capitalize text-decoration-none text-dark font-weight-bold" href="#">smart technology | soluciones inteligentes</a>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="public/js/slick.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"> </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="public/js/popovers.js"> </script>
+<script src="public/js/scrollMenu.js"></script>
+<script src="public/js/sliderCard.js"></script>
+<script src="public/js/scrollTop.js"></script>
+<script src="public/js/buscar/jquery.dataTables.min.js"></script>
+<script src="public/js/buscar/buscador.js"></script>
+<script src="public/js/searchCatalogo.js"></script>

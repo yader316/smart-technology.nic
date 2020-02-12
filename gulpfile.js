@@ -45,7 +45,7 @@ gulp.task('sass', () => {
 //Tarea para comprimir archivos js
 gulp.task('compress-js', (cb) => {
   pump([
-   gulp.src('./dev/js/*.js'), //Ruta de la carpeta apuntando a los archivos `.js`
+   gulp.src('./dev/js/**/*.js'), //Ruta de la carpeta apuntando a los archivos `.js`
    uglify(), //Comprime los archivos `.js`
    gulp.dest('./public/js')//Carpeta donde se guardara el archivo `.js` comprimido
     ],

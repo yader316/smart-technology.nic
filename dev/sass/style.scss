@@ -14,11 +14,10 @@
 @import "components/scroll-top";
 @import "slick/slick-theme";
 
-
-
 // Components
 @import "components/itemsTeam";
 @import "components/contact";
+@import "components/buscar";
 // style del body
 .body-container{
   overflow-x: hidden;
@@ -50,5 +49,14 @@
       left: 20px;
       bottom: 20px;
     }
+  }
+  .content-search{
+    top: 311px;
+  }
+  .position-search-table{
+    top: 312px;
+  }
+  .content-table{
+    width: 80%;
   }
 }

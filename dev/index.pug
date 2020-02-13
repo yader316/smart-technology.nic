@@ -3,7 +3,9 @@ extends include/template
 append config
   -siteName='Home'
 prepend styles
-//-  link de estilo
+  //-  link de estilo
+  link(rel="stylesheet", href="public/css/style.css")
+
 block content
   +Header
   section.sectionContainer.mb-5

@@ -21,7 +21,9 @@
 @import "components/itemsTeam";
 @import "components/contact";
 @import "components/buscar";
+@import "components/accordionSearchProduct";
 @import "components/catalogo";
+
 // style del body
 .body-container{
   overflow-x: hidden;
@@ -62,5 +64,14 @@
   }
   .content-table{
     width: 80%;
+  }
+  .footerContainer{
+    &__title{
+      text-align: center;
+      padding-bottom: 10px;
+      background: {
+        size: 100% 3px;
+      };
+    }
   }
 }

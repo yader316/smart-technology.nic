@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
       pug = require('gulp-pug'),
-      pugPages = require('gulp-pug'),
+      // pugPages = require('gulp-pug'),
       sass = require('gulp-sass'),
       uglify = require('gulp-uglify'),
       pump = require('pump'),
@@ -19,12 +19,12 @@ gulp.task('pug', () =>
 );
 //Tarea para compilar archivos index Pug a html
 // gulp.task('pugPages', () => 
-// gulp.src('./dev/pages/*.pug')
+//   gulp.src('./dev/pages/*.pug')
 //   .pipe(pug({
 //     pretty:true
 //   }))
 //   .pipe(gulp.dest('./public/pages'))
-//   .pipe(notify("Tarea Pug index.html terminado!")) //Mensaje gracias al plugin `gulp-notify`
+//   // .pipe(notify("Tarea Pug index.html terminado!")) //Mensaje gracias al plugin `gulp-notify`
 // );
 
 //Tarea para compilar archivos sass a css

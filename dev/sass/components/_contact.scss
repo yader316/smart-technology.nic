@@ -5,6 +5,7 @@
   background: {
     repeat: no-repeat;
     position: center;
+    size: 100%;
   };
   &__heading {
     font-size: 40px;
@@ -37,7 +38,6 @@
     }
   }
   &__txtArea-form-control{
-    height: 248px;
     resize: none;
   }
 }
@@ -45,4 +45,20 @@
 ::-webkit-input-placeholder {
   font-weight: 700;
   color: #ced4da;
+}
+
+// estilo validaciones form
+
+.help-block{
+  color: rgb(199, 53, 53);
+  font-weight: bold;
+}
+
+.has-success{
+  border: 1px solid rgb(13, 143, 13);
+  box-shadow: 0 0 4px 2px rgb(31, 199, 31);
+}
+.has-error{
+  border: 1px solid rgb(224, 52, 52);
+  box-shadow: 0 0 4px 1px red;
 }

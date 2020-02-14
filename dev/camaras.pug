@@ -1,0 +1,31 @@
+extends include/template
+append config 
+  -siteName = 'Camaras de seguridad'
+prepend styles
+  //- link
+block content
+  header.headerContainer
+    .headerContainer__slider
+      +Slider('300x100')
+    .headerContainer__navContainer 
+      +Menu('visibleLogo')
+  section.allCam
+    h1.text-capitalize.text-center.p-4.bg-drak camaras de seguridad
+    .container
+      .row
+        .col-lg-3.col-md-5.col-12.mb-3
+          nav(class="navbar navbar-dark bg-dark")
+            a(class="navbar-brand text-capitalize" href="#") todas las camaras
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-2").d-md-none #[span.fa.fa-ellipsis-v]
+            .collapse.navbar-collapse#navbar-2.d-md-block
+              .card.bg-dark
+                ul.list-group.list-group-flush
+                  li.list-group-item.p-0
+                    button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="camara90") Camara 90 grado
+                  li.list-group-item.p-0
+                    button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="camara180") Camara 180 grado
+                  li.list-group-item.p-0
+                    button.btn.w-100.category_item(class="list-group-item-action d-flex justify-content-between align-items-center" category="camara360") Camara 360 grado
+        .col-lg-9.col-md-7.col-12
+          h2 cuerpo
+  +Footer

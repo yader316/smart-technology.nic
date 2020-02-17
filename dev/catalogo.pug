@@ -19,22 +19,17 @@ block content
                 +AccordionSearchProduct
         .col-lg-9.col-md-7.col-12
           .products-list.row.row-cols-1.row-cols-sm-2.row-cols-md-2.row-cols-lg-3
-            +CardCatalogoPrice('camara 90 grado','9.99','#','camara')
-            +CardCatalogoPrice('camara 360','04.10','#','camara')
-            +CardCatalogoPrice('bombio 12v','02.12','#','bombio')
-            +CardCatalogoPrice('bombio 6v','10.10','#','bombio')
-            +CardCatalogoPrice('sensor','20.30','#','sensore')
-            +CardCatalogoPrice('bombio','40.00','#','bombio')
-            +CardCatalogoPrice('cable 12v','10.0','#','accesorio')
-            +CardCatalogoPrice('camara','20.0','#','camara')
-            +CardCatalogoPrice('breaker 12v','60.0','#','accesorio')
-            +CardCatalogoPrice('breaker','70.0','#','accesorio')
-            +CardCatalogoPrice('caja de breaker','20.0','#','accesorio')
-            +CardCatalogoPrice('sensor','100.0','#','sensore')
-            +CardCatalogoPrice('tomas corrientes','30.0','#','accesorio')
-            +CardCatalogoPrice('camara 180 grado','40.0','#','camara')
-            +CardCatalogoPrice('sensor','01.0','#','sensore')
-            +CardCatalogoPrice('sensor','12.10','#','sensore')
-  +Footer
+            //-card pide el nombre, precio,url,categoria por nombre y la ultima la categoria por estilo
+            +CardProduct('camara 90','29.91','#','camara','camara90')
+            +CardProduct('camara 360','59.00','#','camara','camara360')
+            +CardProduct('sensores','09.91','#','sensore','sensore1')
+            +CardProduct('sensores dual','30.25','#','sensore','sensore2')
+            +CardProduct('bombios 12v','09.01','#','bombio','bombio12v')
+            +CardProduct('bombio 6v','4.43','#','bombio','bombio6v')
+            +CardProduct('cable dual 10mtr','15.91','#','accesorio','cables')
+            +CardProduct('cable luz 50mtr','30.00','#','accesorio','cable')
+            +CardProduct('enchufe inteligente','08.10','#','enchufe','cable')
+            +CardProduct('enchufe inteligente 4Und','38.10','#','enchufe','cable')
+            +CardProduct('enchufe inteligente 2Und','18.00','#','enchufe','cable')
 block script
   script(src="public/js/searchCatalogo.js")

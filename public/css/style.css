@@ -857,7 +857,7 @@
 }
 
 /* line 562, dev/sass/style.css */
-.category_list .ct_item-active {
+.category_list, .allCam .ct_item-active {
   background: #2D3E50;
   color: white;
 }

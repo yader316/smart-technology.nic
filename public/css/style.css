@@ -911,7 +911,7 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
 .carousel-indicators li {
-  background-color: #3c4043;
+  background-color: #3c4043 !important;
 }
 
 @media (max-width: 1199px) {

@@ -14,15 +14,16 @@
 @import "components/footer";
 // style slick
 @import "slick/slick";
-@import "components/scroll-top";
 @import "slick/slick-theme";
 
 // Components
+@import "components/scroll-top";
 @import "components/itemsTeam";
 @import "components/contact";
 @import "components/buscar";
 @import "components/accordionSearchProduct";
 @import "components/catalogo";
+@import "components/camaraContainer";
 
 // style del body
 .body-container{
@@ -30,6 +31,9 @@
 }
 .eje{
   border: 2px solid red;
+}
+.tabsBorder{
+  border: .5px solid #dee2e6;
 }
 // adatando el logo title al header
 @media (max-width:'1199px'){

@@ -1,0 +1,55 @@
+mixin WyzeCam
+  .container
+    .row.flex-column-reverse.flex-lg-row-reverse.mb-4
+      .col-lg-6.col-md-12
+        +SliderProduct
+      .col-lg-6.col-md-12.pt-5.align-self-center
+        h1.text-uppercase wyze cam v2.
+        h3.text-success $ 20.01
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quas exercitationem illo explicabo error suscipit impedit ipsa sapiente, nesciunt eveniet commodi vel rem vero atque asperiores cum est beatae esse.
+    .row.justify-content-center.bg-dark.text-white.p-3.mb-4
+      h1.dsplay-1.text-capitalize especificaciones
+    .container.mb-3
+      .row.mb-4
+        .col-lg-6.align-self-center
+          h3.text-capitalize 1080p full HD
+          p.p-3 Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.
+        .col-lg-6
+          .imageCompartion
+            img(src="public/img/img1080p.png", alt="imagen 1080p" style="height: 300px;").w-100
+            img(src="public/img/img720p.png", alt="imagen 720p" style="height: 300px;").w-100
+      .dropdown-divider.mb-5
+      .row.flex-lg-row-reverse.mb-4
+        .col-lg-6.mb-4
+          h3.text-capitalize Vision nocturna y esta atento al movimiento y al sonido
+          p 
+          .pl-3.pr-3| Con apertura F2.0, filtro IR-CUT y cuatro LED infrarrojos de 850 nm, la visión nocturna mejorada de WyzeCam brinda claridad a una distancia de hasta 30 pies incluso en la oscuridad total.
+          br
+          .pl-3.pr-3| Reciba una notificación cuando se detecte movimiento o sonido y vea un video clip de la acción para que nunca se pierda nada. Los videoclips se guardan en la nube durante 14 días, de forma gratuita.
+        .col-lg-6
+          .container
+            .embed-responsive.embed-responsive-16by9
+              iframe( class="embed-responsive-item" src="https://www.youtube.com/embed/iEKkOs8RvHU?start=143" allowfullscreen)
+      .dropdown-divider.mb-5
+      .row.mb-4
+        .col-lg-6.mb-4.align-self-center
+          h3.text-capitalize grbacion continua
+          p.p-3 Use una tarjeta microSD (no incluida) para grabación y almacenamiento continuos. La cámara sobrescribirá los archivos más antiguos cuando se llene la tarjeta microSD.
+        .col-lg-6.d-flex.justify-content-center
+          .container
+            img(src="public/img/sd-card.png", alt="sd momoria").w-100
+      .dropdown-divider.mb-5
+    .row.justify-content-center.bg-dark.text-white.p-3.mb-4
+      h1.dsplay-1.text-capitalize pasos de instalacion
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 3','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('caja.png','Paso 2','abrir la caja de WYZE Cam','En la parte superior de la caja quite la proteccion para poder sacar todos los accesorios','left')
+          +BranchesContainer('resetear.png','Paso 4','reseteamo la camara','En la parte de abajo hay un boton, precionelo hasta que suene, luego sueltelo','right')
+          +BranchesContainer('codigo.png','Paso 5','configurar la camara con la App','Coloque la camara frente al telefono para que escanear el codigo QR','left')
+          +BranchesContainer('camcolocada.png','Paso 6','instalar la camara en el hogar','Coloque la camara donde usted convenga para su seguridad.','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/muybien.png", alt="")

@@ -4,10 +4,8 @@ append config
   -siteName='Home'
 prepend styles
   //-  link de estilo
-  link(rel="stylesheet", href="public/css/style.css")
-
 block content
-  +Header
+  +Header('banneriglesia.jpg')
   section.sectionContainer.mb-5
     .container
       .row.mt-4
@@ -23,23 +21,19 @@ block content
   section.d-flex.justify-content-center.p-3.mb-5.bg-info
     h2.container.text-white.text-center "No puedo entender porqué la gente está asustada con las nuevas ideas. Yo lo estoy de las viejas"
   section.container.mb-5
-    .row
-      div(class="col-lg-3 col-md-6")
-        +CardProduct('camara 90','29.91','#','camara')
-      div(class="col-lg-3 col-md-6")
-        +CardProduct('camara 360','59.00','#','camara')
-      div(class="col-lg-3 col-md-6")
-        +CardProduct('sensores dual','30.25','#','sensore')
-      div(class="col-lg-3 col-md-6")
-        +CardProduct('bombios 12v','09.01','#','bombio')
-      div(class="col-lg-3 col-md-6 collapse" id="viewAll")
+    .row.row-cols-1.row-cols-md-4  
+      +CardProduct('camara 90','29.91','#','camara')  
+      +CardProduct('camara 360','59.00','#','camara')  
+      +CardProduct('sensores dual','30.25','#','sensore')  
+      +CardProduct('bombios 12v','09.01','#','bombio')
+      div(class=" collapse" id="viewAll")
         +CardProduct('bombio 6v','4.43','#','bombio')
-      div(class="col-lg-3 col-md-6 collapse" id="viewAll")
+      div(class=" collapse" id="viewAll")
         +CardProduct('enchufe inteligente','08.10','#','enchufe')
-      div(class="col-lg-3 col-md-6 collapse" id="viewAll")
-        +CardProduct('enchufe intel. 2Und','18.00','#','enchufe')
-      div(class="col-lg-3 col-md-6 collapse" id="viewAll")
-        +CardProduct('enchufe intel. 4Und','38.10','#','enchufe')
+      div(class=" collapse" id="viewAll")
+        +CardProduct('enchufe intelg. 2Und','18.00','#','enchufe')
+      div(class=" collapse" id="viewAll")
+        +CardProduct('enchufe intelg. 4Und','38.10','#','enchufe')
     .container.d-flex.justify-content-center
       button.btn.btn-outline-info.text-capitalize(type="button" data-toggle="collapse" data-target="#viewAll" aria-expanded="true" aria-controls="collapseOne") ver mas
   section.teamContainer.bg-light.page-section.pt-5.pb-5

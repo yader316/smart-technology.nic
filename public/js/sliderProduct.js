@@ -1,0 +1,1 @@
+$(function(){$(".sliderProduct").slick({dots:!0})});

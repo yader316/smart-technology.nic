@@ -907,43 +907,50 @@
   border: .5px solid #dee2e6;
 }
 
+/* line 592, dev/sass/style.css */
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators li {
+  background-color: #3c4043;
+}
+
 @media (max-width: 1199px) {
-  /* line 593, dev/sass/style.css */
+  /* line 598, dev/sass/style.css */
   .headerContainer__imgLogo-title {
     width: 170px;
   }
 }
 
 @media (max-width: 991px) {
-  /* line 597, dev/sass/style.css */
+  /* line 602, dev/sass/style.css */
   .visibleLogo {
     display: block;
   }
-  /* line 599, dev/sass/style.css */
+  /* line 604, dev/sass/style.css */
   .headerContainer__navContainer {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
   }
-  /* line 604, dev/sass/style.css */
+  /* line 609, dev/sass/style.css */
   .headerContainer__logoBanner {
     left: 20px;
     bottom: 20px;
   }
-  /* line 607, dev/sass/style.css */
+  /* line 612, dev/sass/style.css */
   .content-search {
     top: 299px;
   }
-  /* line 609, dev/sass/style.css */
+  /* line 614, dev/sass/style.css */
   .position-search-table {
     top: 312px;
   }
-  /* line 611, dev/sass/style.css */
+  /* line 616, dev/sass/style.css */
   .content-table {
     width: 80%;
   }
-  /* line 613, dev/sass/style.css */
+  /* line 618, dev/sass/style.css */
   .footerContainer__title {
     text-align: center;
     padding-bottom: 10px;

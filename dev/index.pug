@@ -10,8 +10,8 @@ block content
     .container
       .row.mt-4
         .sectionContainer__img.col-lg-6.col-md-6.col-sm-12
-          +Slider('400x300')
-        .sectionContainer__description.col-lg-6.col-md-6.col-sm-12
+          +Slider('cam-pam/pan_left_2.jpg','Cam-white/wyze_cam_front.jpg','sensor/wyze-sense_1.jpg','bujia.png')
+        .sectionContainer__description.col-lg-6.col-md-6.col-sm-12.align-self-center
           .container.mt-5
             h1.text-capitalize Tecnología avanzada para tus necesidades.
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -22,18 +22,18 @@ block content
     h2.container.text-white.text-center "No puedo entender porqué la gente está asustada con las nuevas ideas. Yo lo estoy de las viejas"
   section.container.mb-5
     .row.row-cols-1.row-cols-md-4  
-      +CardProduct('camara 90','29.91','#','camara')  
-      +CardProduct('camara 360','59.00','#','camara')  
-      +CardProduct('sensores dual','30.25','#','sensore')  
-      +CardProduct('bombios 12v','09.01','#','bombio')
+      +CardProduct('Cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#','camara')  
+      +CardProduct('cam-pam/pan_front.jpg','wyze cam pam','59.00','#','camara')  
+      +CardProduct('sensor/wyze-sense-contact-sensor-spec1.png','sensores','30.25','#','sensore')  
+      +CardProduct('bujia.png','bombios 12v','09.01','#','bombio')    
       div(class=" collapse" id="viewAll")
-        +CardProduct('bombio 6v','4.43','#','bombio')
+        +CardProduct('enchufe/nav-plug.jpg','enchufe inteligente','08.10','#','enchufe')
       div(class=" collapse" id="viewAll")
-        +CardProduct('enchufe inteligente','08.10','#','enchufe')
-      div(class=" collapse" id="viewAll")
-        +CardProduct('enchufe intelg. 2Und','18.00','#','enchufe')
-      div(class=" collapse" id="viewAll")
-        +CardProduct('enchufe intelg. 4Und','38.10','#','enchufe')
+        +CardProduct('cam-black.png','cam v2 black','29.91','#','camara')
+      //- div(class=" collapse" id="viewAll")
+      //-   +CardProduct('enchufe intelg. 2Und','18.00','#','enchufe')
+      //- div(class=" collapse" id="viewAll")
+      //-   +CardProduct('enchufe intelg. 4Und','38.10','#','enchufe')
     .container.d-flex.justify-content-center
       button.btn.btn-outline-info.text-capitalize(type="button" data-toggle="collapse" data-target="#viewAll" aria-expanded="true" aria-controls="collapseOne") ver mas
   section.teamContainer.bg-light.page-section.pt-5.pb-5

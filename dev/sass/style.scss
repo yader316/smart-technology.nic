@@ -32,8 +32,15 @@
 .eje{
   border: 2px solid red;
 }
+
 .tabsBorder{
   border: .5px solid #dee2e6;
+}
+// icon de carrousel
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators li{
+  background-color: #3c4043;
 }
 // adatando el logo title al header
 @media (max-width:'1199px'){

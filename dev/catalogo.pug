@@ -5,7 +5,7 @@ append config
 prepend styles
   //- van los link
 block content
-  +Header
+  +Header('banneriglesia.jpg')
   section.showContainer.mb-5
     h1.text-center.showContainer__title Tienda
     .container
@@ -20,16 +20,12 @@ block content
         .col-lg-9.col-md-7.col-12
           .products-list.row.row-cols-1.row-cols-sm-2.row-cols-md-2.row-cols-lg-3
             //-card pide el nombre, precio,url,categoria por nombre y la ultima la categoria por estilo
-            +CardProduct('camara 90','29.91','#','camara','camara90')
-            +CardProduct('camara 360','59.00','#','camara','camara360')
-            +CardProduct('sensores','09.91','#','sensore','sensore1')
-            +CardProduct('sensores dual','30.25','#','sensore','sensore2')
-            +CardProduct('bombios 12v','09.01','#','bombio','bombio12v')
-            +CardProduct('bombio 6v','4.43','#','bombio','bombio6v')
-            +CardProduct('cable dual 10mtr','15.91','#','accesorio','cables')
-            +CardProduct('cable luz 50mtr','30.00','#','accesorio','cable')
-            +CardProduct('enchufe inteligente','08.10','#','enchufe','cable')
-            +CardProduct('enchufe inteligente 4Und','38.10','#','enchufe','cable')
-            +CardProduct('enchufe inteligente 2Und','18.00','#','enchufe','cable')
+            +CardProduct('Cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#','camara')  
+            +CardProduct('cam-pam/pan_front.jpg','wyze cam pam','59.00','#','camara')  
+            +CardProduct('sensor/wyze-sense-contact-sensor-spec1.png','sensores','30.25','#','sensore')  
+            +CardProduct('enchufe/nav-plug.jpg','enchufe inteligente','08.10','#','enchufe')
+            +CardProduct('cam-black.png','cam v2 black','29.91','#','camara')
+            +CardProduct('sdCard32.png','memoria SD 32G','09.91','#','accesorio')
+            +CardProduct('bujia.png','bombios 12v','09.01','#','bombio')  
 block script
   script(src="public/js/searchCatalogo.js")

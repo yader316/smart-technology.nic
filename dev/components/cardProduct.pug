@@ -1,11 +1,11 @@
-mixin CardProduct(title,precio,url,categoriaName)
+mixin CardProduct(image,title,precio,url,categoriaName)
   - var num1 = 9.99;
   - var num2 = 49.99;
   //-validar por precio del producto y asi buscar por precio
   if precio <= num1 && precio >= 0
     div(class=`col mb-4 product-item` category=`precio-09` nameProduct=`${categoriaName}`)
       .card
-        img.card-img-top(src="http://placehold.it/200x170", alt="")
+        img.card-img-top(src=`public/img/${image}`, alt="")
         .card-body
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}
@@ -14,7 +14,7 @@ mixin CardProduct(title,precio,url,categoriaName)
   else if precio > num1 && precio <= num2
     div(class=`col mb-4 product-item` category=`precio-1049` nameProduct=`${categoriaName}`)
       .card
-        img.card-img-top(src="http://placehold.it/200x170", alt="")
+        img.card-img-top(src=`public/img/${image}`, alt="")
         .card-body
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}
@@ -23,7 +23,7 @@ mixin CardProduct(title,precio,url,categoriaName)
   else if precio > num2 
     div(class=`col mb-4 product-item` category=`precio-5099` nameProduct=`${categoriaName}`)
       .card
-        img.card-img-top(src="http://placehold.it/200x170", alt="")
+        img.card-img-top(src=`public/img/${image}`, alt="")
         .card-body
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}

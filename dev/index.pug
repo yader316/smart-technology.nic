@@ -4,6 +4,7 @@ append config
   -siteName='Home'
 prepend styles
   //-  link de estilo
+  link(rel="stylesheet", href="public/css/twentytwenty.css")
 block content
   +Header('banneriglesia.jpg')
   section.sectionContainer.mb-5
@@ -22,7 +23,8 @@ block content
     h2.container.text-white.text-center "No puedo entender porqué la gente está asustada con las nuevas ideas. Yo lo estoy de las viejas"
   section.container.mb-5
     .row.row-cols-1.row-cols-md-4  
-      +CardProduct('Cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#','camara')  
+      //- primero se ingresa la imagen, luego el nombre, el precio, idModal, categoria
+      +CardProduct('Cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#wyzeCam','camara')  
       +CardProduct('cam-pam/pan_front.jpg','wyze cam pam','59.00','#','camara')  
       +CardProduct('sensor/wyze-sense-contact-sensor-spec1.png','sensores','30.25','#','sensore')  
       +CardProduct('bujia.png','bombios 12v','09.01','#','bombio')    
@@ -34,6 +36,11 @@ block content
       //-   +CardProduct('enchufe intelg. 2Und','18.00','#','enchufe')
       //- div(class=" collapse" id="viewAll")
       //-   +CardProduct('enchufe intelg. 4Und','38.10','#','enchufe')
+    //-para ingresar los datos seguir el siguiente orden
+    //-el ID, nombre, la direccion de la imagen desde la carpeta img,
+    //-el subtitulo seguido de su descripccio. son tres subtitulo y tres
+    //-description y por ultimo el url de la pagina donde va air 
+    +ModalProduct('wyzeCam','wyze cam v2.','Cam-white/wyze_cam_mounted.jpg','1080p full HD','Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.','vision nocturna','Con apertura F2.0, filtro IR-CUT y cuatro LED infrarrojos de 850 nm, la visión nocturna mejorada de WyzeCam brinda claridad a una distancia de hasta 30 pies incluso en la oscuridad total.','esta atento al movimiento y al sonido','Reciba una notificación cuando se detecte movimiento o sonido y vea un video clip de la acción para que nunca se pierda nada. Los videoclips se guardan en la nube durante 14 días, de forma gratuita.','camaras.html')
     .container.d-flex.justify-content-center
       button.btn.btn-outline-info.text-capitalize(type="button" data-toggle="collapse" data-target="#viewAll" aria-expanded="true" aria-controls="collapseOne") ver mas
   section.teamContainer.bg-light.page-section.pt-5.pb-5
@@ -51,3 +58,9 @@ block content
         +SliderTeam('jonathan zamora','ing. electronico','2.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
         +SliderTeam('kaome sunade','vendedora','3.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
   +Footer
+append script
+  script(src="public/js/imgCompare/jquery.event.move.js")
+  script(src="public/js/imgCompare/jquery.twentytwenty.js")
+  script(src="public/js/imgCompare/imgComparation.js")
+  script(src="public/js/sliderProduct.js")
+  script(src="public/js/loader.js")

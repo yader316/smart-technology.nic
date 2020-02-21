@@ -1,4 +1,4 @@
-mixin CardProduct(image,title,precio,url,categoriaName)
+mixin CardProduct(image,title,precio,idModal,categoriaName)
   - var num1 = 9.99;
   - var num2 = 49.99;
   //-validar por precio del producto y asi buscar por precio
@@ -10,7 +10,7 @@ mixin CardProduct(image,title,precio,url,categoriaName)
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}
         .card-footer.d-flex.justify-content-end
-          a.btn.btn-outline-info.text-capitalize(href=`${url}`) leer mas
+          button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${idModal}`) leer mas
   else if precio > num1 && precio <= num2
     div(class=`col mb-4 product-item` category=`precio-1049` nameProduct=`${categoriaName}`)
       .card
@@ -19,7 +19,7 @@ mixin CardProduct(image,title,precio,url,categoriaName)
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}
         .card-footer.d-flex.justify-content-end
-          a.btn.btn-outline-info.text-capitalize(href=`${url}`) leer mas
+          button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${idModal}`) leer mas
   else if precio > num2 
     div(class=`col mb-4 product-item` category=`precio-5099` nameProduct=`${categoriaName}`)
       .card
@@ -28,4 +28,4 @@ mixin CardProduct(image,title,precio,url,categoriaName)
           h5.card-title.text-capitalize #{title}
           p.card-text $ #{precio}
         .card-footer.d-flex.justify-content-end
-          a.btn.btn-outline-info.text-capitalize(href=`${url}`) leer mas
+          button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${idModal}`) leer mas

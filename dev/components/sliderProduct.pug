@@ -1,7 +1,15 @@
-mixin SliderProduct
-  .sliderProduct(style="width:100%;")
-    img(src="public/img/Cam-white/wyze_cam_front_2.jpg", alt="")
-    img(src="public/img/Cam-white/wyze_cam_front.jpg", alt="")
-    img(src="public/img/Cam-white/wyze_cam_mounted.jpg", alt="")
-    img(src="public/img/Cam-white/wyze_cam_sit_1.jpg", alt="")
-    img(src="public/img/Cam-white/wyze_cam_sit_2.jpg", alt="")
+mixin SliderProduct(colorPhoto)
+  if colorPhoto == 'black'
+    .sliderProduct(style="width:100%;")
+      img(src="public/img/cam-black/wyzeCamBlack-1.png", alt="")
+      img(src="public/img/cam-black/wyzeCamBlack-2.png", alt="")
+      img(src="public/img/cam-black/wyzeCamBlack.png", alt="")
+      img(src="public/img/cam-black/banneriglesia.jpg", alt="")
+      img(src="public/img/cam-black/wyzeCamBlack.png", alt="")
+  else
+    .sliderProduct(style="width:100%;")
+      img(src="public/img/cam-white/wyze_cam_front_2.jpg", alt="")
+      img(src="public/img/cam-white/wyze_cam_front.jpg", alt="")
+      img(src="public/img/cam-white/wyze_cam_mounted.jpg", alt="")
+      img(src="public/img/cam-white/wyze_cam_sit_1.jpg", alt="")
+      img(src="public/img/cam-white/wyze_cam_sit_2.jpg", alt="")

@@ -1,0 +1,23 @@
+mixin ModalCamPam
+  .modal.fade(id="wyzeCamPam" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize wyze cam pam
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 1080p full HD.
+                p.p-3 Longitud focal de 3,5 mm. Apertura F2.3. Lente gran angular de 120º. Sensor CMOS de 1 / 2.7 ″ mejorado. Ademas ofrece imágenes HD de 1080p con una claridad sorprendente.
+                h4.text-capitalize.bg-secondary.text-white.p-3 ver toda la habitación. Rápido.
+                p.p-3 Te ofrece una cobertura horizontal de 360°, vertical de 93° y una velocidad de rotacion de 110° / segundo.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Seguir la acción
+                p.p-3 Marca y rastrea automáticamente el movimiento dentro de su campo de visión. Mantenerse al día con la vida en tiempo real nunca ha sido tan fácil.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/cam-pam/see-entire-room-mobile.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`camaras.html`) ver mas camaras

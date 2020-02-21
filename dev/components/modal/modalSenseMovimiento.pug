@@ -1,0 +1,21 @@
+mixin ModalSenseMovimiento
+  .modal.fade(id="senseMovimiento" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize sensor de movimiento
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Enciende / apaga las luces con la bombilla
+                p.p-3 Sensor de movimiento se puede usar para controlar otros productos inteligente utilizando la aplicación Wyze, o usar IFTTT para conectar Sensor de movimiento con sus dispositivos domésticos inteligentes existentes.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Véalo con Camaras de seguridad inteligente
+                p.p-3 No solo sepa que su sensor se activó, vea exactamente qué lo activó. Configure cualquiera (o todas) de sus camaras de seguridad inteligentes para grabar un video cuando se active un sensor para capturar la acción desde todos los ángulos.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/sensor/wyze-sense-motion-sensor1.png`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas sensores

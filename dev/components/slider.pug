@@ -1,10 +1,11 @@
-mixin Slider(image1,image2,image3,image4)
+mixin Slider(image1,image2,image3,image4,image5)
   .carousel.slide#carouselExampleIndicators(data-ride="carousel")
     ol.carousel-indicators
       li#carouselExampleIndicators.active(data-slide-to="0")
       li#carouselExampleIndicators(data-slide-to="1")
       li#carouselExampleIndicators(data-slide-to="2")
       li#carouselExampleIndicators(data-slide-to="3")
+      li#carouselExampleIndicators(data-slide-to="4")
     .carousel-inner
       .carousel-item.active
         img.d-block.w-100(src=`public/img/${image1}`, alt="")
@@ -14,6 +15,8 @@ mixin Slider(image1,image2,image3,image4)
         img.d-block.w-100(src=`public/img/${image3}`, alt="")
       .carousel-item
         img.d-block.w-100(src=`public/img/${image4}`, alt="")
+      .carousel-item
+        img.d-block.w-100(src=`public/img/${image5}`, alt="")
     a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
       span.carousel-control-prev-icon(aria-hidden="true")
       span.sr-only Previous

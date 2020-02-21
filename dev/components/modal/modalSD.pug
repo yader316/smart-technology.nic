@@ -1,0 +1,18 @@
+mixin ModalSD
+ .modal.fade(id="memoriaSD" tabindex="-1" role="dialog" aria-hidden="true" )
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize memorias sd 32-128G
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12.align-self-center
+                h4.text-capitalize.bg-secondary.text-white.p-3 Almacena todo desde tu memoria sd
+                p.p-3 Es un dispositivo en formato de tarjeta de memoria para dispositivos portátiles, por ejemplo: cámaras digitales, teléfonos móviles, teléfonos inteligentes, computadoras portátiles y videoconsolas, tabletas y entre muchos otros. 
+              .col-lg-6.col-12
+                img(src=`public/img/sd-card.png`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar

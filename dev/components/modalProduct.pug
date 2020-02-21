@@ -1,23 +1,9 @@
-mixin ModalProduct(modalId,modalTitle,modalImg,modalSubtitle,paragrahp,modalSubtitle2,paragrahp2,modalSubtitle3,paragrahp3,modalUrl)
-  .modal.fade(id=`${modalId}` tabindex="-1" role="dialog" aria-hidden="true")
-    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
-      .modal-content
-        .modal-header
-          h1.display-6.modal-title.text-capitalize #{modalTitle}
-          button.close(type="button" data-dismiss="modal" aria-label="Close")
-            span(aria-hidden="true") &times;
-        .modal-body
-          .container-fluid
-            .row
-              .col-lg-6.col-12
-                h3.text-capitalize.bg-secondary.text-white.p-3 #{modalSubtitle}
-                p.p-3 #{paragrahp}
-                h3.text-capitalize.bg-secondary.text-white.p-3 #{modalSubtitle2}
-                p.p-3 #{paragrahp2}
-                h3.text-capitalize.bg-secondary.text-white.p-3 #{modalSubtitle3}
-                p.p-3 #{paragrahp3}
-              .col-lg-6.col-12
-                img(src=`public/img/${modalImg}`, alt="").w-100
-        .modal-footer
-          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
-          a.btn.btn-primary(href=`${modalUrl}`) ver mas camaras
+mixin ModalProduct
+  +ModalCam('wyzeCam','cam-white/wyze_cam_mounted.jpg')
+  +ModalCam('wyzeCamBlack','cam-black/wyzeCamBlack.png','black','white')
+  +ModalCamPam
+  +ModalSenseContact
+  +ModalBombillo
+  +ModalEnchufe
+  +ModalSenseMovimiento
+  +ModalSD

@@ -1,0 +1,23 @@
+mixin ModalCam(idmodal,image,color,textcolor)
+  .modal.fade(id=`${idmodal}` tabindex="-1" role="dialog" aria-hidden="true" )
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content(style=`background-color: ${color}; color:${textcolor};`)
+        .modal-header
+          h1.display-6.modal-title.text-capitalize wyze cam v2.
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true" style=`color:${textcolor}`) &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 1080p full HD
+                p.p-3 Longitud focal de 2.8 mm. Lente gran angular de 110º. Sensor CMOS de 1 / 2.9 ". 1920 × 1080 (1080p) full HD. Imágenes tan claras que no se perderá nada.
+                h4.text-capitalize.bg-secondary.text-white.p-3 vision nocturna
+                p.p-3 Con apertura F2.0, filtro IR-CUT y cuatro LED infrarrojos de 850 nm, la visión nocturna mejorada de WyzeCam brinda claridad a una distancia de hasta 30 pies incluso en la oscuridad total.
+                h4.text-capitalize.bg-secondary.text-white.p-3 esta atento al movimiento y al sonido 
+                p.p-3 Reciba una notificación cuando se detecte movimiento o sonido y vea un video clip de la acción para que nunca se pierda nada. Los videoclips se guardan en la nube durante 14 días, de forma gratuita.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/${image}`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`camaras.html`) ver mas camaras

@@ -6,14 +6,15 @@ mixin CamaraContainer
           ul.nav.nav-tabs.flex-column.flex-sm-row(role="tablist")
             li.nav-item(role="presentation")
               a.nav-link.tabs-link.active(href="#wyzeCam" aria-controls="wyzeCam" data-toggle="tab" role="tab").text-uppercase wyze cam v2.
-            li.nav-item(role="presentation") 
-              a.nav-link.tabs-link(href="#wyzeCamPam" aria-controls="wyzeCamPam" data-toggle="tab" role="tab").text-uppercase wyze cam pam 
             li.nav-item(role="presentation")
               a.nav-link.tabs-link(href="#wyzeCamBlack" aria-controls="wyzeCamBlack" data-toggle="tab" role="tab").text-uppercase wyze cam black
-          .tab-content.tabsBorder.pt-4.pb-4
-            div(role="tabpanel" class="tab-pane active" id='wyzeCam')
+            li.nav-item(role="presentation") 
+              a.nav-link.tabs-link(href="#wyzeCamPam" aria-controls="wyzeCamPam" data-toggle="tab" role="tab").text-uppercase wyze cam pam 
+          .tab-content.tabsBorder
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='wyzeCam')
               +WyzeCam
-            div(role="tabpanel" class="tab-pane" id='wyzeCamPam')
-              h3 seccion #2 
-            div(role="tabpanel" class="tab-pane" id='wyzeCamBlack')
-              h3 seccion #3
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='wyzeCamBlack' style=`background-color: black; color: white`)
+              +WyzeCam('black')
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='wyzeCamPam')
+              h1 aqui va la cam pam
+           

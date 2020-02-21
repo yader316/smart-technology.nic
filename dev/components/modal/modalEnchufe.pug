@@ -1,0 +1,21 @@
+mixin ModalEnchufe
+  .modal.fade(id="enchufe" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize enchufe inteligente
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 controla tu hogar desde cualquier lugar  
+                p.p-3 Verifique el estado de todos sus enchufes inteligentes y enciéndalos o apáguelos de manera remota para evitar facturas de alta energía y riesgos de incendio.
+                h4.text-capitalize.bg-secondary.text-white.p-3 encendido cuando lo necesitas, apagado cuando no.
+                p.p-3 La programación personalizada en la aplicación Wyze le permite activar o desactivar enchufe inteligente en momentos específicos del día.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/enchufe/plug-controlhome3.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas 

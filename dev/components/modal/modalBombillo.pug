@@ -1,0 +1,23 @@
+mixin ModalBombillo
+  .modal.fade(id="bombillo" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize bombillo inteligente
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 establecer el estado de ánimo
+                p.p-3 Brillante, de color blanco frío para el café de la mañana y tenue, de color blanco suave para una noche relajante.
+                h4.text-capitalize.bg-secondary.text-white.p-3 una bombilla regulable
+                p.p-3 De 800 lúmenes (equivalente a 60W), puede tener la iluminación perfecta para crear el ambiente sin importar la ocasión.
+                h4.text-capitalize.bg-secondary.text-white.p-3 rango de temperatura
+                p.p-3 Con un rango de temperatura de 2,700k a 6,500k'
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/bujiaPhone.png`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas

@@ -726,6 +726,12 @@
 }
 
 /* line 474, dev/sass/style.css */
+.category_list .ct_item-active {
+  background: #2D3E50;
+  color: white;
+}
+
+/* line 478, dev/sass/style.css */
 .contactContainer {
   padding: 100px 0;
   background-color: #212529;
@@ -735,7 +741,7 @@
   background-size: 100%;
 }
 
-/* line 481, dev/sass/style.css */
+/* line 485, dev/sass/style.css */
 .contactContainer__heading {
   font-size: 40px;
   margin-top: 0;
@@ -743,7 +749,7 @@
   color: white;
 }
 
-/* line 486, dev/sass/style.css */
+/* line 490, dev/sass/style.css */
 .contactContainer__subheading {
   font-size: 16px;
   font-weight: 400;
@@ -752,64 +758,64 @@
   text-transform: none;
 }
 
-/* line 492, dev/sass/style.css */
+/* line 496, dev/sass/style.css */
 .contactContainer__form-group {
   margin-bottom: 25px;
 }
 
-/* line 494, dev/sass/style.css */
+/* line 498, dev/sass/style.css */
 .contactContainer__txt-form-control, .contactContainer__txtArea-form-control {
   padding: 20px;
   width: 100%;
 }
 
-/* line 497, dev/sass/style.css */
+/* line 501, dev/sass/style.css */
 .contactContainer__txt-form-control {
   height: auto;
 }
 
-/* line 499, dev/sass/style.css */
+/* line 503, dev/sass/style.css */
 .contactContainer__txt-form-control:focus {
   box-shadow: none;
 }
 
-/* line 501, dev/sass/style.css */
+/* line 505, dev/sass/style.css */
 .contactContainer__txtArea-form-control {
   resize: none;
 }
 
-/* line 504, dev/sass/style.css */
+/* line 508, dev/sass/style.css */
 ::-webkit-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
 
-/* line 508, dev/sass/style.css */
+/* line 512, dev/sass/style.css */
 .help-block {
   color: #c73535;
   font-weight: bold;
 }
 
-/* line 512, dev/sass/style.css */
+/* line 516, dev/sass/style.css */
 .has-success {
   border: 1px solid #0d8f0d;
   box-shadow: 0 0 4px 2px #1fc71f;
 }
 
-/* line 516, dev/sass/style.css */
+/* line 520, dev/sass/style.css */
 .has-error {
   border: 1px solid #e03434;
   box-shadow: 0 0 4px 1px red;
 }
 
-/* line 520, dev/sass/style.css */
+/* line 524, dev/sass/style.css */
 #input-search {
   width: 220px;
   height: 40px;
   text-indent: 10px;
 }
 
-/* line 525, dev/sass/style.css */
+/* line 529, dev/sass/style.css */
 .content-search {
   width: 100%;
   height: 100vh;
@@ -819,7 +825,7 @@
   z-index: 99;
 }
 
-/* line 533, dev/sass/style.css */
+/* line 537, dev/sass/style.css */
 .position-search-table {
   width: 100%;
   height: 100vh;
@@ -829,7 +835,7 @@
   z-index: 99;
 }
 
-/* line 541, dev/sass/style.css */
+/* line 545, dev/sass/style.css */
 .content-table {
   width: 30%;
   max-height: 200px;
@@ -840,29 +846,29 @@
   overflow-x: hidden;
 }
 
-/* line 550, dev/sass/style.css */
+/* line 554, dev/sass/style.css */
 .content-table table {
   width: 100%;
 }
 
-/* line 553, dev/sass/style.css */
+/* line 557, dev/sass/style.css */
 .content-items {
   transition: all .3s ease-in-out;
 }
 
-/* line 555, dev/sass/style.css */
+/* line 559, dev/sass/style.css */
 .content-items:hover {
   background-color: rgba(5, 183, 211, 0.3);
 }
 
-/* line 557, dev/sass/style.css */
+/* line 561, dev/sass/style.css */
 .content-items:hover .content-link {
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 562, dev/sass/style.css */
+/* line 566, dev/sass/style.css */
 .content-link,
 .dataTables_empty {
   display: block;
@@ -871,18 +877,12 @@
   text-decoration: none;
 }
 
-/* line 569, dev/sass/style.css */
+/* line 573, dev/sass/style.css */
 #table_length,
 #table_filter,
 #table_info,
 #table_paginate {
   display: none;
-}
-
-/* line 575, dev/sass/style.css */
-.category_list, .allCam .ct_item-active {
-  background: #2D3E50;
-  color: white;
 }
 
 /* line 579, dev/sass/style.css */

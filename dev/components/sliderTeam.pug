@@ -1,30 +1,291 @@
-mixin SliderTeam(name,cargo,photo,rede1,description1,rede2,description2,rede3,description3)
-  .team-member
-    img.mx-auto.rounded-circle.team-member__img(src=`public/img/team/${photo}`, alt=`foto de ${name}`)
-    h4.text-capitalize.team-member__title #{name}
-    p.text-capitalize.team-member__subTitle #{cargo}
-    ul.team-member__list.list-inline
-      li.list-inline-item: button.team-member__iconLink(
-        type="button" 
-        class="btn" 
-        data-toggle="popover"
-        data-trigger="focus"
-        data-placement="bottom" 
-        data-content= `${description1}`
-        ) #[i(class=`fab fa-${rede1}`)]
-      li.list-inline-item: button.team-member__iconLink(
-        type="button" 
-        class="btn" 
-        data-toggle="popover"
-        data-trigger="focus" 
-        data-placement="bottom"
-        data-content=`${description2}`
-        ) #[i(class=`fab fa-${rede2}`)]
-      li.list-inline-item: button.team-member__iconLink(
-        type="button" 
-        class="btn" 
-        data-toggle="popover"
-        data-trigger="focus" 
-        data-placement="bottom"
-        data-content=`${description3}`
-        ) #[i(class=`fa fa-${rede3}`)]
+mixin SliderTeam
+  each dataTeam in dataTeamWork
+    .team-member
+      img.mx-auto.rounded-circle.team-member__img(src=`public/img/team/${dataTeam[2]}`, alt=`foto de ${dataTeam[0]}`)
+      h4.text-capitalize.team-member__title #{dataTeam[0]}
+      p.text-capitalize.team-member__subTitle #{dataTeam[1]}
+      ul.team-member__list.list-inline
+        //- validamos toda la posibilidades que registremos primero cualquier redes 
+        //- sociales de primero y de segundo 
+        -var face = 'facebook';
+        -var what = 'whatsapp';
+        -var email = 'envelope';
+        if dataTeam[3]  === face && dataTeam[5] === what && dataTeam[7] === email
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fa fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === face && dataTeam[5] === email && dataTeam[7] === what
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fa fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fab fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === what && dataTeam[5] === face && dataTeam[7] === email
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fa fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === what && dataTeam[5] === email && dataTeam[7] === face
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fa fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fab fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === email && dataTeam[5] === face && dataTeam[7] === what
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fa fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fab fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === email && dataTeam[5] === what && dataTeam[7] === face
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fa fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[8]}`
+            ) #[i(class=`fab fa-${dataTeam[7]}`)]
+        else if dataTeam[3] === face && dataTeam[5] === what
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === face && dataTeam[5] === email
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fa fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === what && dataTeam[5] === face
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === what && dataTeam[5] === email
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fa fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === email && dataTeam[5] === what
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fa fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === email && dataTeam[5] === face
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fa fa-${dataTeam[3]}`)]
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus" 
+            data-placement="bottom"
+            data-content=`${dataTeam[6]}`
+            ) #[i(class=`fab fa-${dataTeam[5]}`)]
+        else if dataTeam[3] === face
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+        else if dataTeam[3] === what
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fab fa-${dataTeam[3]}`)]
+        else if dataTeam[3] === email
+          li.list-inline-item: button.team-member__iconLink(
+            type="button" 
+            class="btn" 
+            data-toggle="popover"
+            data-trigger="focus"
+            data-placement="bottom" 
+            data-content= `${dataTeam[4]}`
+            ) #[i(class=`fa fa-${dataTeam[3]}`)]

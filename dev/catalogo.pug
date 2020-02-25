@@ -19,18 +19,8 @@ block content
                 +AccordionSearchProduct
         .col-lg-9.col-md-7.col-12
           .products-list.row.row-cols-1.row-cols-sm-2.row-cols-md-2.row-cols-lg-3
-            //-card pide el nombre, precio,url,categoria por nombre y la ultima la categoria por estilo
-            +CardProduct('cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#wyzeCam','camara')  
-            +CardProduct('cam-pam/pan_front.jpg','wyze cam pam','59.00','#wyzeCamPam','camara')  
-            +CardProduct('bujia.png','bombillo inteligente','09.01','#bombillo','bombillo')  
-            +CardProduct('enchufe/enchufe.png','enchufe inteligente','08.10','#enchufe','enchufe')
-            +CardProduct('sensor/wyze-sense-contact-sensor-spec1.png','sensor de contacto','30.25','#senseContact','sensore')  
-            +CardProduct('cam-black/cam-black.png','cam v2 black','29.91','#wyzeCamBlack','camara')
-            +CardProduct('sensor/wyze-sense-motion-sensor1.png','sensor de movimiento','31.00','#senseMovimiento','sensore')
-            +CardProduct('memoria-sd.png','memorias SD 32-128G','09.91','#memoriaSD','accesorio')
+            +CardProduct
           +ModalProduct
   +Footer
-  //- corremos el array
-  //- +array
 block script
   script(src="public/js/searchCatalogo.js")

@@ -23,16 +23,20 @@ block content
     h2.text-white.font-italic "No hagas planes, crea opciones." 
     h4.text-dark Y eso es lo que te ofrecemos para una mejor seguridad en tu hogar o trabajo.
   section.container.mb-5
-    .row  
-      //- primero se ingresa la imagen, luego el nombre, el precio, idModal, categoria
-      .col-lg-3.col-md-6.col-xs-12
-        +CardProduct('cam-white/wyze_cam_front_2.jpg','wyze cam','29.91','#wyzeCam','camara')  
-      .col-lg-3.col-md-6.col-xs-12
-        +CardProduct('cam-pam/pan_front.jpg','wyze cam pam','59.00','#wyzeCamPam','camara')  
-      .col-lg-3.col-md-6.col-xs-12
-        +CardProduct('enchufe/enchufe.png','enchufe inteligente','08.10','#enchufe','enchufe')
-      .col-lg-3.col-md-6.col-xs-12
-        +CardProduct('bujia.png','bombillo inteligente','09.01','#bombillo','bombillo') 
+    .row.mb-4
+      //- el ciclo while es para que solo aparescan los primero 4 productos
+      //- de arreglo dataProducts
+      -var nCard = 0;
+      while nCard < 4
+        -var dataProduct = dataCardProduct[nCard++]       
+        .col-lg-3
+          .card.mb-3
+            img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataProduct[1]}
+              p.card-text $ #{dataProduct[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas 
     +ModalProduct
     .container.d-flex.justify-content-center
       a.btn.btn-outline-info.text-capitalize(type="button" href="catalogo.html") ver mas
@@ -43,13 +47,7 @@ block content
           h2.text-capitalize nuestro equipo de trabajo
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       .container.sliderTeamContainer.mt-4
-        //- se inserta de la siguiente manera:
-        //- nombre y apellido, titulo o cargo, foto, redes ya sea facebook
-        //-  whatsapp y para gmail es envelope y despues de cada red ingrese los datos
-        +SliderTeam('yader mendoza','ing. sistema','2.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
-        +SliderTeam('taislani mendoza','vendedora','1.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
-        +SliderTeam('jonathan zamora','ing. electronico','2.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
-        +SliderTeam('kaome sunade','vendedora','3.jpg','facebook','www.faceebook/yader','whatsapp','+505 8326-1118','envelope','ejemplo@gmail.com')
+        +SliderTeam
   +Footer
 append script
   script(src="public/js/imgCompare/jquery.event.move.js")

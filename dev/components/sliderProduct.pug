@@ -1,15 +1,24 @@
-mixin SliderProduct(colorPhoto)
-  if colorPhoto == 'black'
+mixin SliderProduct(estilo)
+  if estilo === 'black'
     .sliderProduct(style="width:100%;")
       img(src="public/img/cam-black/wyzeCamBlack-1.png", alt="")
       img(src="public/img/cam-black/wyzeCamBlack-2.png", alt="")
       img(src="public/img/cam-black/wyzeCamBlack.png", alt="")
       img(src="public/img/cam-black/banneriglesia.jpg", alt="")
       img(src="public/img/cam-black/wyzeCamBlack.png", alt="")
-  else
+  else if estilo === 'white'
     .sliderProduct(style="width:100%;")
       img(src="public/img/cam-white/wyze_cam_front_2.jpg", alt="")
       img(src="public/img/cam-white/wyze_cam_front.jpg", alt="")
       img(src="public/img/cam-white/wyze_cam_mounted.jpg", alt="")
       img(src="public/img/cam-white/wyze_cam_sit_1.jpg", alt="")
-      img(src="public/img/cam-white/wyze_cam_sit_2.jpg", alt="")
+      img(src="public/img/cam-white/wyze_cam_sit_2.jpg", alt="")    
+  else if estilo === 'campam'
+    .sliderProduct(style="width:100%;")
+      img(src="public/img/cam-pam/pan_front.jpg", alt="")
+      img(src="public/img/cam-pam/pan_left_2.jpg", alt="")
+      img(src="public/img/cam-pam/pan_right_2.jpg", alt="")
+      img(src="public/img/cam-pam/see-entire-room-mobile1.png", alt="")
+      img(src="public/img/cam-pam/wcpmk-prod1.png", alt="")
+  else
+    h1 no hay imagen 

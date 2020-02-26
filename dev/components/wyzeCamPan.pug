@@ -1,3 +1,61 @@
-mixin Camara180
-  .products-container(typeProduct="camara180")
-    h1 aqui va la camara 180
+mixin CamPam
+  //- traemo los datos del producto
+  -var dataCamPam = dataCardProduct[1];
+  .container
+    .row.flex-column-reverse.flex-lg-row-reverse.mb-4
+      .col-lg-6.col-md-12
+        +SliderProduct('campam')
+      .col-lg-6.col-md-12.pt-5.align-self-center
+        h1.text-uppercase #{dataCamPam[1]}
+        h3.text-success $ #{dataCamPam[2]}
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat ut temporibus omnis, quasi illum at enim maxime consequatur pariatur necessitatibus, libero soluta. Debitis maxime labore esse, sequi nisi sunt.
+    .row
+      .col-12.d-lg-none.d-sm-block
+        .container
+          h2.text-capitalize.text-center.mb-3 Ver toda la habitación. Rápido.
+          p Camara inteligente Pan te ofrece una cobertura de 360 ​​° en menos de 3 segundos.
+      .col-12.d-lg-none.d-sm-block.backgroundCamPam(style="background-image: url('public/img/cam-pam/see-entire-room-mobile.jpg');")
+      .col-12.backgroundCamPam(style="background-image: url('public/img/cam-pam/campam360.jpg');").d-lg-flex.justify-content-end.align-items-center.d-none
+        .pr-5
+          h2.text-capitalize Ver toda la habitación. Rápido.
+          p 
+          | Camara inteligente Pan te ofrece una cobertura de 
+          br
+          |360 ​​° en menos de 3 segundos.
+    .row.d-lg-block.d-none
+      img(src="public/img/cam-pam/pan-scan.jpg", alt="").w-100
+      div(style="background-color: #f5f7f7; padding: 2rem 1rem;")
+        .container.text-center
+          h2.text-capitalize 1080p full HD.
+          p 3.5mm focal length. F2.3 aperture. 120º wide angle lens. Enhanced 1/2.7″ CMOS sensor. Wyze Cam Pan delivers 1080p HD images with stunning clarity.
+    .row.d-sm-block.d-lg-none
+      div(style="background-color: #f5f7f7; padding: 2rem 1rem;")
+        .container.text-center
+          h2.text-capitalize 1080p full HD.
+          p 3.5mm focal length. F2.3 aperture. 120º wide angle lens. Enhanced 1/2.7″ CMOS sensor. Wyze Cam Pan delivers 1080p HD images with stunning clarity.
+      img(src="public/img/cam-pam/pan-scan-mobile.jpg", alt="").w-100
+    .container.mt-4
+      .row
+        .col-lg-5.col-md-6.col-12.align-self-center
+          h2.text-capitalize Recibe alertas al instante.
+          p Camara Inteligente Pan graba automáticamente un video de evento de 12 segundos cuando detecta movimiento o sonidos. Active las notificaciones push para estar al tanto de las cosas sin tener que monitorear constantemente la aplicación.
+        .col-lg-7.col-md-6.col-12
+          img(src="public/img/cam-pam/campamSO.png", alt="").w-100
+    
+    .row(style="background-color: #f5f7f7; padding: 2rem 1rem; margin-bottom: 2rem;")
+      h2.text-center.w-100.text-capitalize paso de instalacion
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('campanbox.png','Paso 3','abrir la caja de Cam Pam','En la parte superior de la caja quite la proteccion para poder sacar todos los accesorios','left')
+          +BranchesContainer('codigo.png','Paso 4','configurar la camara con la App','Coloque la camara frente al telefono para que escanear el codigo QR','right')
+          +BranchesContainer('camPanAccesorio.png','Paso 5','sacar los accesorios','Con cuidado saque los accesorios que se ocuparan para poder armar la camara','left')
+          +BranchesContainer('camPanArmada.png','Paso 6','Armar','Se procede a armar la parte donde va aquedar descansando la camara y proceder a instalarla donde usted convenga','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/camPanInstalada.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura

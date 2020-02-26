@@ -30,13 +30,14 @@ block content
       while nCard < 4
         -var dataProduct = dataCardProduct[nCard++]       
         .col-lg-3
-          .card.mb-3
-            img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
-            .card-body
-              h5.card-title.text-capitalize #{dataProduct[1]}
-              p.card-text $ #{dataProduct[2]}
-            .card-footer.d-flex.justify-content-end
-              button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas 
+          .card-deck.h-100
+            .card.mb-3
+              img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
+              .card-body
+                h5.card-title.text-capitalize #{dataProduct[1]}
+                p.card-text $ #{dataProduct[2]}
+              .card-footer.d-flex.justify-content-end
+                button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas 
     +ModalProduct
     .container.d-flex.justify-content-center
       a.btn.btn-outline-info.text-capitalize(type="button" href="catalogo.html") ver mas

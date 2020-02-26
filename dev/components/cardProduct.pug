@@ -8,28 +8,32 @@ mixin CardProduct
     //-validar por precio del producto y asi buscara por precio
     if dataProduct[2] <= num1 && dataProduct[2] >= 0
       div(class=`col mb-4 product-item` category=`precio-09` nameProduct=`${dataProduct[4]}`)
-        .card
-          img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
-          .card-body
-            h5.card-title.text-capitalize #{dataProduct[1]}
-            p.card-text $ #{dataProduct[2]}
-          .card-footer.d-flex.justify-content-end
-            button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataProduct[1]}
+              p.card-text $ #{dataProduct[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
     else if dataProduct[2] > num1 && dataProduct[2] <= num2
       div(class=`col mb-4 product-item` category=`precio-1049` nameProduct=`${dataProduct[4]}`)
-        .card
-          img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
-          .card-body
-            h5.card-title.text-capitalize #{dataProduct[1]}
-            p.card-text $ #{dataProduct[2]}
-          .card-footer.d-flex.justify-content-end
-            button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataProduct[1]}
+              p.card-text $ #{dataProduct[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
     else if dataProduct[2] > num2 
       div(class=`col mb-4 product-item` category=`precio-5099` nameProduct=`${dataProduct[4]}`)
-        .card
-          img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
-          .card-body
-            h5.card-title.text-capitalize #{dataProduct[1]}
-            p.card-text $ #{dataProduct[2]}
-          .card-footer.d-flex.justify-content-end
-            button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${dataProduct[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataProduct[1]}
+              p.card-text $ #{dataProduct[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.text-capitalize(data-toggle="modal" data-target=`${dataProduct[3]}`) leer mas
+              

@@ -4,8 +4,16 @@ mixin WyzeCam(colorPhoto)
       .col-lg-6.col-md-12
           +SliderProduct(colorPhoto)
       .col-lg-6.col-md-12.pt-5.align-self-center
-        h1.text-uppercase wyze cam v2.
-        h3.text-success $ 20.01
+        if colorPhoto === 'white'
+          //- traemo los datos del producto
+          -var dataCamWhite = dataCardProduct[0];
+          h1.text-uppercase #{dataCamWhite[1]} (blanco)
+          h3.text-success $ #{dataCamWhite[2]}
+        else 
+          //- traemo los datos del producto
+          -var dataCamBlack = dataCardProduct[5];
+          h1.text-uppercase #{dataCamBlack[1]} 
+          h3.text-success $ #{dataCamBlack[2]}
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quas exercitationem illo explicabo error suscipit impedit ipsa sapiente, nesciunt eveniet commodi vel rem vero atque asperiores cum est beatae esse.
     .row.justify-content-center.bg-dark.text-white.p-3.mb-4
       h1.dsplay-1.text-capitalize especificaciones
@@ -45,11 +53,15 @@ mixin WyzeCam(colorPhoto)
       .col-lg-12
         ul.treeContainer
           +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
-          +BranchesContainer('loginwyze.png','Paso 3','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
-          +BranchesContainer('caja.png','Paso 2','abrir la caja de WYZE Cam','En la parte superior de la caja quite la proteccion para poder sacar todos los accesorios','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('caja.png','Paso 3','abrir la caja de WYZE Cam','En la parte superior de la caja quite la proteccion para poder sacar todos los accesorios','left')
           +BranchesContainer('resetear.png','Paso 4','reseteamo la camara','En la parte de abajo hay un boton, precionelo hasta que suene, luego sueltelo','right')
           +BranchesContainer('codigo.png','Paso 5','configurar la camara con la App','Coloque la camara frente al telefono para que escanear el codigo QR','left')
           +BranchesContainer('camcolocada.png','Paso 6','instalar la camara en el hogar','Coloque la camara donde usted convenga para su seguridad.','right')
           li.treeContainer__items
             .treeContainer__image
-              img.rounded-circle.img-fluid(src="public/img/muybien.png", alt="")
+              img.rounded-circle.img-fluid(src="public/img/camInstalada.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura
+          

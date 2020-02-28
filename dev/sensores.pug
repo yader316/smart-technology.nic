@@ -1,0 +1,25 @@
+extends include/template
+append config
+  -siteName= 'Sensores';
+prepend styles
+  //- link
+
+block content
+  +Header('backgroundSense.png')
+  section.mt-5.mb-5
+    h1.text-capitalize.text-center.p-4.bg-dark.text-white sensores
+  .container
+    .row
+      .col-12
+        div(role="tabpanel")
+          ul.nav.nav-tabs.flex-column.flex-sm-row(role="tablist")
+            li.nav-item(role="presentation")
+              a.nav-link.tabs-link.active(href="#sensorContacto" aria-controls="sensorContacto" data-toggle="tab" role="tab").text-uppercase sensor de contacto
+            li.nav-item(role="presentation")
+              a.nav-link.tabs-link(href="#sensorMovimiento" aria-controls="sensorMovimiento" data-toggle="tab" role="tab").text-uppercase sensor de movimiento
+          .tab-content.tabsBorder
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='sensorContacto')
+              +SenseContact
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane" id='sensorMovimiento')
+              +SenseMovimiento
+  +Footer

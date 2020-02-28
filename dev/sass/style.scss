@@ -13,14 +13,26 @@
   border: 2px solid red;
 }
 
-.tabsBorder{
-  border: .5px solid #dee2e6;
-}
+
 // icon de carrousel
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
 .carousel-indicators li{
   background-color: #3c4043!important;
+}
+//- tabs de la camaras y sensores
+.tabs-link{
+  color: #495057;
+  &:hover{
+    color: yellowgreen;
+  }
+}
+.nav-tabs .nav-link.active{
+  color:white;
+  background-color: #495057;
+}
+.tabsBorder{
+  border: .5px solid #dee2e6;
 }
 // tree
 @import "components/tree/treeContainer";
@@ -40,7 +52,7 @@
 @import "components/contact";
 @import "components/buscar";
 @import "components/catalogo";
-@import "components/camaraContainer";
+@import "components/senseMovim";
 @import "components/wyzeCamPam";
 
 // adatando el logo title al header

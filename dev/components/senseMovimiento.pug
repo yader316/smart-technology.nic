@@ -1,0 +1,62 @@
+mixin SenseMovimiento
+  -var dataSenseContact = dataCardProduct[6]
+  .container
+    .row
+      .col-md-6.col-sm-12.align-self-center
+        h1.text-capitalize #{dataSenseContact[1]}
+        h4.text-success $ #{dataSenseContact[2]}
+        p Detección de movimiento PIR: el sensor de movimiento Wyze utiliza un sensor infrarrojo pasivo para detectar movimiento en un campo de visión de 120°
+      .col-md-6.col-sm-12.mb-4
+        img(src="public/img/sensor/wyze-sense-motion-sensor1.png", alt="").w-100
+    .row.mb-4
+      h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 notificaciones al instante 
+    .row.mb-4
+      .col-md-6.col-sm-12
+        img(src="public/img/sensor/senseMovimiento.jpg", alt="").w-100
+      .col-lg-6.align-self-center
+        h4.mb-5 Los sensores de movimiento de Wyze le notifican cuando se detecta movimiento de personas o mascotas.
+        .row
+          .text-center.w-100.col-lg-4.col-12
+            i.fa.fa-battery-full.mb-3
+            br
+            p.text-uppercase 12 meses de duracion de la bateria
+          .text-center.w-100.col-lg-4.col-12
+            i.fa.fa-columns.mb-3
+            br
+            p.text-uppercase deteccion de apertura / cierre
+          .text-center.w-100.col-lg-4.col-12
+            i.fa.fa-bullseye.mb-3
+            br
+            p.text-uppercase grabacion de video.
+    .row.mb-4
+      h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 saber cuando sucedió
+    .row.mb-4
+      .col-lg-6.col-md-12.align-self-center
+        p.p-4 Vea el estado actual y el historial de sus sensores directamente en la aplicación Wyze. Los eventos de movimiento se registran y almacenan durante 14 días, para que pueda ver exactamente cuándo se activó un sensor y durante cuánto tiempo, incluso si ha desactivado las notificaciones automáticas.
+      .col-lg-6.col-md-12
+        img(src="public/img/sensor/sensenotificacionMovi.jpg", alt="").w-100
+    .row
+      h1.m-0.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 automatización del hogar inteligente
+    .row
+      .card.bg-dark.text-white
+        img.card-img(src="public/img/wyze-open-house-desktop-left.jpg", alt="").w-100
+        .card-img-overlay.d-flex.justify-content-end
+          p.card-text.d-lg-flex.d-none(style="width: 300px; font-size: 1.4rem;") Utilice Wyze Sense para controlar los productos Wyze desde la aplicación u otros productos para el hogar inteligente con IFTTT.
+      p.d-lg-none.d-block.text-center.p-3 Utilice Wyze Sense para controlar los productos Wyze desde la aplicación u otros productos para el hogar inteligente con IFTTT.
+    .row.mb-4
+      h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalacion
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('boxSense.png','Paso 3','abrir la caja de WYZE Sense','En la parte superior de la caja quite la proteccion para poder sacar todos los accesorios','left')
+          +BranchesContainer('resetSenseMovimiento.png','Paso 4','reseteamo el equipo','Con la llave inserta en el orificio de la parte de alado y mantengala presionada durante 100 segundo o cuando carge la configuracion','right')
+          +BranchesContainer('senseMovimnstalada.png','Paso 5','instalacion','Saque lo accesorios del sense y coloque el soportador del sense en el lugar donde va instalarlo.','left')
+          +BranchesContainer('senseCamInstalada.png','Paso 6','configuracion con una camara inteligente','Wyze Sense se conecta a la conexión wifi de Wyze Cam, por lo que la configuración es muy simple. Inserte el puente incluido en la parte posterior de una cámara Wyze, agregue un sensor en su aplicación Wyze, active el sensor y estará listo para funcionar.','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/senseMovimientoColocada.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura

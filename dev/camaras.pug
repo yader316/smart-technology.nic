@@ -2,13 +2,30 @@ extends include/template
 append config 
   -siteName = 'Camaras de seguridad'
 prepend styles
-  //- link
+  //- estilo de la compaacion de imagen 
   link(rel="stylesheet", href="public/css/twentytwenty.css")
 block content
   +Header('bannerCam.png')
-  section.allCam.mb-5
-    h1.text-capitalize.text-center.p-4.bg-drak camaras de seguridad
-    +CamaraContainer
+  section.mt-5.mb-5
+    h1.text-capitalize.text-center.p-4.bg-dark.text-white camaras de seguridad
+  .container
+    .row
+      .col-12
+        div(role="tabpanel")
+          ul.nav.nav-tabs.flex-column.flex-sm-row(role="tablist")
+            li.nav-item(role="presentation")
+              a.nav-link.tabs-link.active(href="#wyzeCam" aria-controls="wyzeCam" data-toggle="tab" role="tab").text-uppercase camara inteligente v2.
+            li.nav-item(role="presentation")
+              a.nav-link.tabs-link(href="#wyzeCamBlack" aria-controls="wyzeCamBlack" data-toggle="tab" role="tab").text-uppercase camara inteligente v2. negro
+            li.nav-item(role="presentation") 
+              a.nav-link.tabs-link(href="#wyzeCamPam" aria-controls="wyzeCamPam" data-toggle="tab" role="tab").text-uppercase camara inteligente cam pam
+          .tab-content.tabsBorder
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='wyzeCam')
+              +WyzeCam('white')
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane" id='wyzeCamBlack' style=`background-color: black; color: white`)
+              +WyzeCam('black')
+            div.pt-4.pb-4(role="tabpanel" class="tab-pane" id='wyzeCamPam')
+              +CamPam
   +Footer
 append script
   script(src="public/js/imgCompare/jquery.event.move.js")

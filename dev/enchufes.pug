@@ -1,0 +1,73 @@
+extends include/template
+append config
+  -siteName = 'Enchufe Inteligente'
+prepend styles
+  //- link stilo
+block content
+  +Header('')
+  //- traer datos del card enchufes
+  -var dataEnchufe = dataCardProduct[3];
+  .container.mt-4
+    .row
+      .col-md-6.col-sm-12.align-self-center.mb-4
+        h1.text-capitalize #{dataEnchufe[1]}
+        h3.text-success $ #{dataEnchufe[2]}
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non hic architecto, id harum nesciunt velit cumque illo sunt ullam. Molestiae laudantium id ullam in perspiciatis. Voluptas quae impedit reprehenderit a. 
+      .col-md-6.col-sm-12.mb-4
+        img(src=`public/img/${dataEnchufe[0]}`, alt="").w-100
+  .section.bg-info.pt-4.pb-4.w-100
+    .container
+      .row
+        .col-md-3.col-sm-6.col-12.text-center
+          img(src="public/img/enchufe/compact.svg", alt="").mb-2
+          p.text-uppercase diseño compacto 
+        .col-md-3.col-sm-6.col-12.text-center
+          img(src="public/img/enchufe/voice.svg", alt="").mb-2
+          p.text-uppercase voz activa
+        .col-md-3.col-sm-6.col-12.text-center
+          img(src="public/img/enchufe/amps.svg", alt="").mb-2
+          p.text-uppercase mayor salida
+        .col-md-3.col-sm-6.col-12.text-center
+          img(src="public/img/enchufe/wifi.svg", alt="").mb-2
+          p.text-uppercase no se requiere concentrador   
+  .container.mt-5
+    .row.flex-column-reverse.flex-lg-row
+      .col-md-6.col-sm-12.mb-4
+        img(src="public/img/enchufe/casa.gif", alt="").w-100
+      .col-md-6.col-sm-12.align-self-center
+        h3.mb-4 El modo de vacaciones hace que parezca el hogar de alguien
+        p El Modo Vacaciones puede encender y apagar tus cosas al azar, haciendo que parezca que estás en casa, por lo que la gente piensa dos veces antes de venir sin ser invitado.
+  .container.mt-5
+    .row
+      .col-md-6.col-sm-12.align-self-center
+        h3.mb-4 Encendido cuando lo necesitas, apagado cuando no
+        p Despiértese con el olor del café recién hecho por la mañana con Scheduling en la aplicación Wyze.
+        p La programación personalizada en la aplicación Wyze le permite activar o desactivar Wyze Plug en momentos específicos del día para que pueda tomar su café a las 6:00 a.m. y apagarlo a las 6:15 a.m.
+      .col-md-6.col-sm-12.mb-4
+        img(src="public/img/enchufe/offonplug.jpg", alt="").w-100
+  .container
+    .row.flex-column-reverse.flex-lg-row
+      .col-md-6.col-sm-12
+        img(src="public/img/enchufe/plug-controlhome.png", alt="").w-100
+      .col-md-6.col-sm-12.align-self-center
+        h3.text-capitalize.mb-4 controla tu hogar desde cualquier lugar
+        p Verifique el estado de todos sus enchufes inteligentes y enciéndalos o apáguelos de manera remota para evitar facturas de alta energía y riesgos de incendio.
+  .row.mb-4
+    h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalación
+  .container
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de WYZE','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('boxEnchufe.png','Paso 3','abrir la caja de Enchufe WYZE','En la parte superior de la caja quite la proteccion para poder sacar los enchufe','left')
+          +BranchesContainer('enchufeColocado.png','Paso 4','colocar el enchufe inteligente','Inserte el enchufe inteligente en una toma de corriente.','right')
+          +BranchesContainer('agregarEnchufe.png','Paso 5','Agregue el enchufe inteligente en la aplicación Wyze.','En la parte superior de la aplicacion de click en los tres puntos y se le abrera un menu, luego dar click en agregar producto','left')
+          +BranchesContainer('onEnchufe.png','Paso 6','Controla tus dispositivos desde cualquier lugar.','Controle su enchufe inteligente con un solo click enciendalo o apagelo desde cuualquier lugar.','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/enchufeColocado.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura
+  +Footer

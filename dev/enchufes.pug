@@ -4,7 +4,8 @@ append config
 prepend styles
   //- link stilo
 block content
-  +Header('')
+  //- se coloca la imagne que ba en el banner y la position
+  +Header('bannerEnchufe.png','right center')
   //- traer datos del card enchufes
   -var dataEnchufe = dataCardProduct[3];
   .container.mt-4
@@ -18,16 +19,16 @@ block content
   .section.bg-info.pt-4.pb-4.w-100
     .container
       .row
-        .col-md-3.col-sm-6.col-12.text-center
+        .col-md-3.col-6.text-center
           img(src="public/img/enchufe/compact.svg", alt="").mb-2
           p.text-uppercase diseño compacto 
-        .col-md-3.col-sm-6.col-12.text-center
+        .col-md-3.col-6.text-center
           img(src="public/img/enchufe/voice.svg", alt="").mb-2
           p.text-uppercase voz activa
-        .col-md-3.col-sm-6.col-12.text-center
+        .col-md-3.col-6.text-center
           img(src="public/img/enchufe/amps.svg", alt="").mb-2
           p.text-uppercase mayor salida
-        .col-md-3.col-sm-6.col-12.text-center
+        .col-md-3.col-6.text-center
           img(src="public/img/enchufe/wifi.svg", alt="").mb-2
           p.text-uppercase no se requiere concentrador   
   .container.mt-5
@@ -52,7 +53,7 @@ block content
       .col-md-6.col-sm-12.align-self-center
         h3.text-capitalize.mb-4 controla tu hogar desde cualquier lugar
         p Verifique el estado de todos sus enchufes inteligentes y enciéndalos o apáguelos de manera remota para evitar facturas de alta energía y riesgos de incendio.
-  .row.mb-4
+  section
     h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalación
   .container
     .row

@@ -1,0 +1,42 @@
+extends include/template
+append config
+  -siteName = 'Bombillo Inteligentes';
+prepend styles
+  //- link
+block content
+  //- se coloca la imagne que ba en el banner y la position
+  +Header('bannerBombillo.png','right center')
+  -var dataBombillo = dataCardProduct[2];
+  .container.mt-4
+    .row
+      .col-md-6.col-12.align-self-center.mb-4
+        h1.text-capitalize #{dataBombillo[1]}
+        h3.text-success $ #{dataBombillo[2]}
+        p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio deleniti voluptas esse. Perspiciatis maxime dolores officiis saepe deleniti repudiandae! Necessitatibus sequi nostrum facilis rerum qui quia iste iusto voluptates officia!
+      .col-md-6.col-12.mb-4
+        img(src=`public/img/${dataBombillo[0]}`, alt="").w-100
+  .section.bg-info.pt-4.pb-4.w-100.mb-4
+    .container
+      .row
+        .col-md-3.col-sm-6.col-6.text-center
+          img(src="public/img/bombillo/temperature.svg", alt="").mb-2
+          p.text-uppercase control de temperatura 
+        .col-md-3.col-sm-6.col-6.text-center
+          img(src="public/img/bombillo/voice.svg", alt="").mb-2
+          p.text-uppercase voz activa
+        .col-md-3.col-sm-6.col-6.text-center
+          img(src="public/img/bombillo/restart.svg", alt="").mb-2
+          p.text-uppercase regulable
+        .col-md-3.col-sm-6.col-6.text-center
+          img(src="public/img/bombillo/wifi.svg", alt="").mb-2
+          p.text-uppercase no se requiere concentrador  
+  .container
+    .row
+      .col-lg-6.col-12.text-center.align-self-center.mb-4
+        img(src="public/img/bombillo/phone-bordersection.png", alt="").mb-4
+        .text-left
+          h3.text-capitalize establecer el estado de ánimo 
+          p Brillante, de color blanco frío para el café de la mañana y tenue, de color blanco suave para una noche relajante, Wyze Bulb puede hacer ambas cosas y mucho más. Con un rango de temperatura de 2,700k a 6,500k y una bombilla regulable de 800 lúmenes (equivalente a 60W), puede tener la iluminación perfecta para crear el ambiente sin importar la ocasión.
+      .col-lg-6.col-12.mb-4 
+        img(src="public/img/bombillo/bujiaOff.png", alt="").w-100
+  +Footer

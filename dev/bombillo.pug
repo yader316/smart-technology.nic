@@ -5,8 +5,8 @@ prepend styles
   //- link
 block content
   //- se coloca la imagne que ba en el banner y la position
-  +Header('bannerBombillo.png','right center')
-  -var dataBombillo = dataCardProduct[2];
+  +Header('fodoBujia.jpg','center')
+  -var dataBombillo = dataCardProduct[2]; 
   .container.mt-4
     .row
       .col-md-6.col-12.align-self-center.mb-4
@@ -39,4 +39,20 @@ block content
           p Brillante, de color blanco frío para el café de la mañana y tenue, de color blanco suave para una noche relajante, Wyze Bulb puede hacer ambas cosas y mucho más. Con un rango de temperatura de 2,700k a 6,500k y una bombilla regulable de 800 lúmenes (equivalente a 60W), puede tener la iluminación perfecta para crear el ambiente sin importar la ocasión.
       .col-lg-6.col-12.mb-4 
         img(src="public/img/bombillo/bujiaOff.png", alt="").w-100
+  section.mb-4
+    h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalación
+  .container
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de WYZE y empareje el bombillo','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('boxBujia.png','Paso 3','abrir la caja de los Bombillos Inteligentes','En la parte superior de la caja quite la proteccion para poder sacar el bombillo','left')
+          +BranchesContainer('sepoBujilla.png','Paso 4','instalar el bombillo','Atornille su nueva bombilla inteligente en un enchufe bien ventilado','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/bujiaInstalada.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura
   +Footer

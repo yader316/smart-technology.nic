@@ -1,0 +1,24 @@
+mixin Sonoff
+  .modal.fade(id="sonoff" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          div
+            h1.modal-title.text-capitalize SONOFF TH16
+            p Sensor de humedad Interruptor Sonda inalámbrica Monitor de temperatura Monitoreo Wifi Smart Home Remote Controller Homekit
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 La distancia ya no es un límite
+                p.p-3 Puede verificar el estado de un dispositivo en cualquier momento y en cualquier lugar, puede decidir encenderlo o apagarlo con un simple toque en la pantalla de su teléfono inteligente o tableta.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Compatible con Alexa / Google Assistant / IFTTT.
+                p.p-3 Vincule la capacidad "eWeLink Smart Home" a la aplicación Alexa, puede pedir a Amazon Echo / Echo Dot / Amazon Tap para activar / desactivar los dispositivos Sonoff; Enlace "Smart We Link" en la aplicación Google Home, comience a revisar sus dispositivos Sonoff en Google Home. Conecte "eWeLink Smart Home" a la aplicación IFTTT, comience a usar las aplicaciones y servicios de IFTTT para controlar sus dispositivos Sonoff.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Controle la temperatura y humedad en tiempo real.
+                p.p-3 Active / desactive automáticamente los dispositivos conectados cuando los activen los sensores de temperatura y humedad. El propietario puede compartir los dispositivos con otras cuentas de eWeLink.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/accesorios/sonoff2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar

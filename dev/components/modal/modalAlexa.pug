@@ -1,0 +1,23 @@
+mixin Alexa
+  .modal.fade(id="alexa" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize Alexa Echo Dot (3ra Gen)
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Conoce el Echo Dot
+                p.p-3 Nuestro parlante inteligente más popular. Ahora con un diseño de tela compacto que se acomoda a cualquier lugar y mejor sonido. Control de voz para tu música- Reproduce canciones desde Amazon Music, Apple Music, Spotify, Sirius XM, y otros. También puedes escuchar audiolibros de Audible.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Pídele a Alexa que haga.?
+                p.p-3 Que reproduzca música, conteste preguntas, lea las noticias, revise el pronóstico del tiempo, configure alarmas, controle los dispositivos domésticos inteligentes compatibles, y mucho más.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Controla tu Smart Home con tu voz.
+                p.p-3  Enciende las luces, ajusta los termostatos, cierra puertas y más con los dispositivos compatibles conectados.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/accesorios/alexa2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas

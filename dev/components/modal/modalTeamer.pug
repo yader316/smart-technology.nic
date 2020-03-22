@@ -1,0 +1,23 @@
+mixin Teamer
+  .modal.fade(id="teamer" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          div
+            h1.modal-title.text-capitalize Temporizador digital programable
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Encendido/Apagado
+                p.p-3 Hasta 8 programas de Encendido/Apagado, ajustes de tiempo independientes para minutos, horas, días y más.
+                h4.text-capitalize.bg-secondary.text-white.p-3 emporizador con salida dual balanceada.
+                p.p-3 Configuración automática de respaldo en caso de fallo de alimentación. 
+                h4.text-capitalize.bg-secondary.text-white.p-3 Ahorra tiempo y energía.
+                p.p-3 Se utiliza para rociadores, luces, hidroponía, iluminación, calefacción, aire acondicionado y otros dispositivos electrónicos.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/accesorios/teamer2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar

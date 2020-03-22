@@ -1,0 +1,25 @@
+mixin Repetidor
+  .modal.fade(id="repetidor" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          div
+            h1.modal-title.text-capitalize Amplificador de señal inalámbrica
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Fácil de instalar
+                p.p-3 El extensor WiFi soporta la función WPS (conecta tu router pulsando los botones del repetidor y el enrutador solo). Ampliación de la cobertura inalámbrica en todas las redes WLAN.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Máximo 300 MBPS
+                p.p-3 El amplificador WiFi cumple con los estándares IEEE 802.11b, IEEE 28.29 oz, IEEE 802.11n; proporciona velocidades de transmisión de hasta 300 Mbps.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Banda universal de 24 GHz.
+                p.p-3 Puede funcionar con cualquier router o puerta de enlace estándar. Banda de 2,4 GHz significa que este amplificador de rango de señal puede soportar la mayoría de los dispositivos que pueden soportar wifi.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Múltiples modos de grabación.
+                p.p-3 El repetidor soporta WPA2 PSK/ WPA PSK/ WEP, que podría proteger bien tu red. El modo WEP puede soportar dispositivos obsoletos.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/accesorios/repetidor2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar

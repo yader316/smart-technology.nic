@@ -1,0 +1,26 @@
+mixin KitMontajeCompleto
+  .modal.fade(id="kitMontajeCompleto" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          div
+            h1.modal-title.text-capitalize kit de montaje completo
+            p Cable de carga con soporte de pared.
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Diseño profesional  
+                p.p-3 Compatible con cámara de seguridad Wyze Cam Pan solamente. El paquete incluye soporte de pared para cámara + cable de carga de 26 pies + 30 clips de alambre + 4 tornillos + 4 enchufes de pared.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Cable de carga
+                p.p-3 USB a micro USB 26 pies de extensión de cable de alimentación mantiene su cámara de seguridad inalámbrica interior o exterior conectado a una distancia mucho mayor. Funciona como cable de alimentación y de datos, carga rápida-A velocidad de carga máxima de hasta 2 A. Transmisión de datos estable y carga rápida.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Montaje en pared
+                p.p-3 Hecho de plástico ABS de alta calidad y material de aluminio, puede proteger el trabajo de la cámara de seguridad de forma estable. Proporciona un ángulo de rotación de 360 ° y una inclinación de 90 ° para garantizar que tu monitor de cámara se mantenga en todo momento sin puntos ciegos y puede ajustarlo en cualquier ángulo que desees.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Fácil de instalar
+                p.p-3 Viene con tornillos y tacos de pared, fácil de montar la cámara y el cable. Ajusta tu ángulo antes de montarlo, para que sepas dónde marcar los tornillos de instalación. Estas herramientas hacen que las paredes se vean más limpias.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/accesorios/kitmontaje2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar

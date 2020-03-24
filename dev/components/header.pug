@@ -1,6 +1,6 @@
 mixin Header(image,position)
   header.headerContainer
-    div(style=`background-image: url('public/img/${image}'); background-position: ${position}`).headerContainer__banner.position-relative
+    div(style=`background-image: url('public/img/${image}'); background-position: center`).headerContainer__banner.position-relative
       .headerContainer__backgroundContainer.position-absolute
         img.headerContainer__img.position-absolute.d-none.d-lg-block(src=`public/img/logo-smart.png`, alt="")
     .headerContainer__navContainer 

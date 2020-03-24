@@ -1,0 +1,73 @@
+extends include/template
+append config
+  -siteName = 'Tomacorriente KMC';
+prepend styles
+  //- link
+block content
+  //- se coloca la imagne que ba en el banner
+  +Header('enchufe/kmcfondo.png')
+  //- traemos los datos de kmc
+  -var dataKmc = dataCardProduct[6];
+  .container.mt-5
+    .row
+      .col-md-6.col-sm-12.align-self-center
+        h1.text-capitalize #{dataKmc[1]}
+        h3.text-success $ #{dataKmc[2]}
+        p KMC WiFi, es un interruptor de toma de corriente que calendariza la  energía y la vigilancia de cada Socket interruptor de la luz, no requiere Hub, mando a distancia, funciona con Amazon y Alexa
+      .col-md-6.col-sm-12
+        img(src="public/img/enchufe/enchufeKmc.png", alt="enchufe kmc").w-100
+  .div(style="background-color: #07bcb2").mb-5.pt-4.pb-4
+    .container
+      .row.justify-content-center
+        .col-lg-3.col-6.text-center
+          img(src="public/img/enchufe/appControl.png", alt="app control")
+          p.text-uppercase controla mediante una App
+        .col-lg-3.col-6.text-center
+          img(src="public/img/enchufe/monitoreo.png", alt="monitoreo")
+          p.text-uppercase monitoreo de electricidad
+        .col-lg-3.col-6.text-center
+          img(src="public/img/enchufe/horario.png", alt="horario")
+          p.text-uppercase establecimiento de tu horario
+        .col-lg-3.col-6.text-center
+          img(src="public/img/enchufe/noHub.png", alt="not hub")
+          p.text-uppercase no requiere HUB
+  .container
+    .row
+      .col-md-6.col-12.mb-5
+        img(src="public/img/enchufe/medidaKmc.jpg", alt="medida kmc").w-100
+      .col-md-6.col-12.align-self-center.mb-5
+        h2.text-capitalize.text-center.mb-4 medidas en longitud
+        p El tomacorriente inteligente KMC tiene un diseño disminuto que ni se nota cuando esta conectado en el hogar o trabajo. Mide de ancho 2.3 in que equivale a 5.84 centímetro, de largo 3.7 in que equivale a 9.4 centímetro y de grosor 1.3 in que equivale a 3.3 centímetro.
+  .container
+    .row.flex-column-reverse.flex-md-row
+      .col-md-6.col-12.align-self-center.mb-5
+        h2.text-capitalize conecte dispositivos y telefonos
+        p Controle de forma independiente desde cualquier lugar.
+      .col-md-6.col-12.mb-5
+        img(src="public/img/enchufe/controlaHorario.jpg", alt="control phone").w-100
+  section
+    h2.text-capitalize.text-center.bg-secondary.text-white.p-4 Puedes conectarla con alexa. 
+  .container
+    .row
+      .col-md-6.col-12.mb-5
+        img(src="public/img/enchufe/kmcAlexa.png", alt="").w-100
+      .col-md-6.col-12.align-self-center.mb-5
+        h2.text-capitalize puede controlar todos los electrodomésticos en el hogar.
+        p Gestiona el hogar con el control por voz de ALEXA en wifi o en la aplicacion KMC Smart.
+  section
+    h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100.mb-4 instalación
+  .container.mb-5
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('kmcAPP.png','Paso 1','descargar la app de KMC Smart','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de KMC Smart','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('kmcColocar.png','Paso 3','Coloque KMC Smart','Enchufle el KMC inteligente en cualquier tomacorriente de la casa o trabajo','left')
+          +BranchesContainer('kmcPhone.png','Paso 4','sincronicelo desde la APP','Agrege desde la APP KCM el tomacorriente que coloco en su hogar o trabajo','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/kmcConectado.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura
+  +Footer

@@ -1,0 +1,34 @@
+extends include/template
+append config
+  -siteName = 'Tomacorriente Gosund';
+prepend styles
+  //- link
+block content
+  //- se coloca la imagne que ba en el banner
+  +Header('enchufe/fondoGosund.png')
+  //- traemos los datos de kmc
+  -var dataGound = dataCardProduct[8];
+  .container.mt-5
+    .row
+      .col-md-6.col-sm-12.align-self-center
+        h1.text-capitalize #{dataGound[1]}
+        h3.text-success $ #{dataGound[2]}
+        p Tomacorriente mini wifi funciona con Alexa, Google Home, no requiere concentrador, control remoto de tus electrodomésticos desde cualquier lugar, certificado ETL, solo admite red de 2,4 GHz.
+      .col-md-6.col-sm-12
+        img(src="public/img/enchufe/gosund.png", alt="enchufe gosund").w-100  
+  .container
+    .row.flex-column-reverse.flex-md-row
+      .col-md-6.col-12.mb-5
+        img(src="public/img/enchufe/medidaGosund.jpg", alt="medida gosund").w-100
+      .col-md-6.col-12.mb-5.align-self-center
+        h2.text-capitalize.text-center.mb-4 medidas en longitud
+        p El tomacorriente inteligente Gosund tiene un diseño disminuto que ni se nota cuandoesta conectado en el hogar o trabajo. Mide de ancho 1.1 in que equivale a 2.8 centímetro, de largo 2 in que equivale a 5.08 centímetro.
+  .container
+    .row
+      .col-md-6.col-12
+        h2.text-capitalize.mb-4 Gosund funcionan con Alexa y Google Home Assistant.
+        p Solo tienes que dar un simple comando de voz para controlar tu dispositivo doméstico con salida inteligente a través de Alexa o Google Home Assistant. No requiere hub para instalar el enchufe wifi. El enchufe de salida Gosund Alexa funciona con una red estable de 2,4 GHz.
+      .col-md-6.col-12
+        img(src="public/img/enchufe/homeGosund.png", alt="").w-100
+
+  +Footer

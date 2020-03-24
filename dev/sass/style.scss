@@ -13,7 +13,10 @@
   border: 2px solid red;
 }
 
-
+// estilo para el parrafo 
+.paragraphContent{
+  width: 80%;
+}
 // icon de carrousel
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
@@ -89,6 +92,12 @@
   .content-table{
     width: 80%;
   }
+  .contactContainer{
+    padding: 50px 0;
+    &__subheading {
+      margin-bottom: 40px;
+    }
+  }
   .footerContainer{
     &__title{
       text-align: center;
@@ -97,5 +106,12 @@
         size: 100% 3px;
       };
     }
+  }
+}
+
+@media (max-width:'767px'){
+  .paragraphContent{
+    width: 100%;
+    background-image: url('public/img/enchufe/fondoColor');
   }
 }

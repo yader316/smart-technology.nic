@@ -30,5 +30,20 @@ block content
         p Solo tienes que dar un simple comando de voz para controlar tu dispositivo doméstico con salida inteligente a través de Alexa o Google Home Assistant. No requiere hub para instalar el enchufe wifi. El enchufe de salida Gosund Alexa funciona con una red estable de 2,4 GHz.
       .col-md-6.col-12
         img(src="public/img/enchufe/homeGosund.png", alt="").w-100
-
+  section
+    h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100.mb-4 instalación
+  .container.mb-5
+    .row
+      .col-lg-12
+        ul.treeContainer
+          +BranchesContainer('gosundAPP.png','Paso 1','descargar la app de Gosund ','En playstore para andrio y Appstore para apple','left')
+          +BranchesContainer('loginwyze.png','Paso 2','iniciar sesion en la app de KMC Smart','Si no tiene cuenta en la app WYZE, se puede regitrar con su correo electronico ya sea gmail, yahoo, etc.','right')
+          +BranchesContainer('gosundColocar.png','Paso 3','Coloque tomacorriente Gosund','Tomacorriente Gosund inteligente en cualquier tomacorriente de la casa o trabajo','left')
+          +BranchesContainer('gosundPhone.png','Paso 4','sincronicelo desde la APP','Agrege desde la APP Gosund el tomacorriente que coloco en su hogar o trabajo','right')
+          li.treeContainer__items
+            .treeContainer__image
+              img.rounded-circle.img-fluid(src="public/img/gosundInstalado.png", alt="")
+            div(class=`treeContainer__panel-left`)
+              .treeContainer__heading
+                h4.treeContainer__title Felicidades tu casa esta segura
   +Footer

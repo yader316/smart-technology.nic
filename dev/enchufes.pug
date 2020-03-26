@@ -5,15 +5,15 @@ prepend styles
   //- link stilo
 block content
   //- se coloca la imagne que ba en el banner y la position
-  +Header('bannerEnchufe.png')
+  +Header('fondoEnchufes.png')
   section.mt-5.mb-5
     h1.text-capitalize.text-center.p-4 Tomacorrientes Inteligentes
   .container
     //- extraemos los datos
     -var dataWyze = dataCardProduct[3];
     -var dataKmc = dataCardProduct[6];
-    -var dataGound = dataCardProduct[8];
-    
+    -var dataGosund = dataCardProduct[8];
+   
     .row
       .col-md-4.col-12.mb-5
         .card-deck.h-100
@@ -23,7 +23,7 @@ block content
               h5.card-title.text-capitalize #{dataWyze[1]}
               p.card-text $ #{dataWyze[2]}
             .card-footer.d-flex.justify-content-end
-              a.btn.btn-outline-info.btn-block.text-capitalize(href="enchufesWyze.html") ver mas        
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataWyze[3]}`) leer mas        
       .col-md-4.col-12.mb-5
         .card-deck.h-100
           .card
@@ -32,14 +32,15 @@ block content
               h5.card-title.text-capitalize #{dataKmc[1]}
               p.card-text $ #{dataKmc[2]}
             .card-footer.d-flex.justify-content-end
-              a.btn.btn-outline-info.btn-block.text-capitalize(href="enchufeKMC.html") ver mas        
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataKmc[3]}`) leer mas        
       .col-md-4.col-12.mb-5
         .card-deck.h-100
           .card
-            img.card-img-top(src=`public/img/${dataGound[0]}`, alt="")
+            img.card-img-top(src=`public/img/${dataGosund[0]}`, alt="")
             .card-body
-              h5.card-title.text-capitalize #{dataGound[1]}
-              p.card-text $ #{dataGound[2]}
+              h5.card-title.text-capitalize #{dataGosund[1]}
+              p.card-text $ #{dataGosund[2]}
             .card-footer.d-flex.justify-content-end
-              a.btn.btn-outline-info.btn-block.text-capitalize(href="enchufeGosund.html") ver mas
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataGosund[3]}`) leer mas
+  +ModalProduct
   +Footer

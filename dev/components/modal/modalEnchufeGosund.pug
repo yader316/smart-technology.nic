@@ -1,0 +1,23 @@
+mixin ModalEnchufeGosund
+  .modal.fade(id="enchufeGosund" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize enchufe inteligente KMC
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 horario y temporizador.  
+                p.p-3 Al configurar horarios y temporizadores para enchufes eléctricos inteligentes de tu hogar, puedes preparar una comida para olla y llegar a casa con la cena lista. Prepárate para tener un hogar inteligente y crea un calendario personalizado para encender/apagar automáticamente cualquier electrodoméstico como lámparas, luces de Navidad, cafeteras, etc. Tenga en cuenta que el enchufe de salida Alexa no es adecuado para los aparatos cuya potencia es de más de 10 A, 1200 W (por ejemplo: aire acondicionado, horno microondas, cocina de inducción, etc.).
+                h4.text-capitalize.bg-secondary.text-white.p-3 control remoto desde cualquier lugar.
+                p.p-3 El enchufe inteligente de Google Gosund puede ayudarte a controlar tus electrodomésticos desde cualquier lugar. Incluso usted no está en casa, también puede controlar su salida wifi alexa a través de Gosund App directamente, siempre y cuando su teléfono acceda a una red Wi-Fi segura de 2,4 GHz. Ideal para alguien que no puede moverse muy bien y necesita un fácil acceso para encender/apagar un dispositivo.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Fácil de instalar y seguro.
+                p.p-3 Simplemente conecte un dispositivo a la mini toma inteligente WiFi y conéctelo a su red segura de 2,4 GHz con la aplicación "Gosund". La certificación ETL garantiza una protección completa. El enchufe inteligente Gosund está respaldado por un servicio incondicional de por vida.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/enchufe/gosund2.png`, alt="gosund enchufe").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`enchufeGosund.html`) ver mas 

@@ -1,0 +1,23 @@
+mixin EfergyHub
+  .modal.fade(id="efergyHub" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize Efergy Engage HUB Kit
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 seguimiento de su consumo de energía
+                p.p-3 Realice un seguimiento de su consumo de energía desde cualquier lugar utilizando las aplicaciones móviles de Android e iOS, y entre en la recopilación y análisis de datos descargando una hoja de cálculo de datos mensual en su computadora
+                h4.text-capitalize.bg-secondary.text-white.p-3 Monitoree sobre la marcha.
+                p.p-3 Brinda información sobre su uso de energía a través de nuestras aplicaciones web, iOS y Android.
+                h4.text-capitalize.bg-secondary.text-white.p-3 El Engage es fácil de instalar y usar.
+                p.p-3 El sensor se enganchará en su medidor de electricidad, por lo que puede medir la corriente que fluye a través de él y medir su uso. Adjunto a este sensor hay un transmisor inalámbrico, que luego transmite la lectura a su pantalla inalámbrica o concentrador habilitado para Wi-Fi.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/efergyHub/efergy-kit.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas

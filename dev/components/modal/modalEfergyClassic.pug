@@ -1,0 +1,23 @@
+mixin EfergyClassic
+  .modal.fade(id="efergyClasic" tabindex="-1" role="dialog" aria-hidden="true")
+    .modal-dialog.modal-dialog-scrollable.modal-xl(role="document")
+      .modal-content
+        .modal-header
+          h1.display-6.modal-title.text-capitalize Efergy E2 Clasico
+          button.close(type="button" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        .modal-body
+          .container-fluid
+            .row.flex-column-reverse.flex-lg-row
+              .col-lg-6.col-12
+                h4.text-capitalize.bg-secondary.text-white.p-3 Monitoree, descargue y analice.
+                p.p-3 Descubra cuánta electricidad se está utilizando en un momento dado, descargue, analice y rastree su uso de energía en su computadora.
+                h4.text-capitalize.bg-secondary.text-white.p-3 Descarga tus datos de energía
+                p.p-3 Descargue sus datos de consumo de energía a su PC y analícelos con el software elink . Vea gráficos de información, imprima o guarde informes como archivos PDF. Los datos también se pueden ver usando Excel u otros paquetes de hojas de cálculo.
+                h4.text-capitalize.bg-secondary.text-white.p-3 El E2 es fácil de instalar y usar.
+                p.p-3 El sensor se enganchará en su medidor de electricidad, por lo que puede medir la corriente que fluye a través de él y medir su uso. Adjunto a este sensor hay un transmisor inalámbrico, que luego transmite la lectura a su pantalla inalámbrica o concentrador habilitado para Wi-Fi.
+              .col-lg-6.col-12.align-self-center
+                img(src=`public/img/efergyClassic/efergyClassicE2.jpg`, alt="").w-100
+        .modal-footer
+          button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
+          a.btn.btn-primary(href=`#`) ver mas

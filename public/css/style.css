@@ -993,3 +993,14 @@
     background-image: url("public/img/enchufe/fondoColor");
   }
 }
+
+@media (max-width: 992px) {
+  /* line 647, dev/sass/style.css */
+  .sectionContainer {
+    margin-top: 4rem;
+  }
+  /* line 649, dev/sass/style.css */
+  .showContainer__title {
+    margin-top: 3.5rem;
+  }
+}

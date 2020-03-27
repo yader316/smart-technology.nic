@@ -1,4 +1,4 @@
-mixin ModalCam(idmodal,image,color,textcolor)
+mixin ModalCam(idmodal,image,url,color,textcolor)
   .modal.fade(id=`${idmodal}` tabindex="-1" role="dialog" aria-hidden="true" )
     .modal-dialog.modal-dialog-scrollable.modal-xl( role="document")
       .modal-content(style=`background-color: ${color}; color:${textcolor};`)
@@ -20,4 +20,4 @@ mixin ModalCam(idmodal,image,color,textcolor)
                 img(src=`public/img/${image}`, alt="").w-100
         .modal-footer
           button.btn.btn-secondary.text-capitalize(type="button"  data-dismiss="modal") cerrar
-          a.btn.btn-primary(href=`camaras.html`) ver mas camaras
+          a.btn.btn-primary(href=`${url}`) ver mas

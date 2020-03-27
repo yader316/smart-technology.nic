@@ -2,10 +2,10 @@ mixin CamPam
   //- traemo los datos del producto
   -var dataCamPam = dataCardProduct[1];
   .container
-    .row.flex-column-reverse.flex-lg-row-reverse.mb-4
-      .col-lg-6.col-md-12
+    .row.flex-column-reverse.flex-lg-row-reverse.sectionContainer
+      .col-lg-6.col-md-12.mb-4
         +SliderProduct('campam')
-      .col-lg-6.col-md-12.pt-5.align-self-center
+      .col-lg-6.col-md-12.pt-5.align-self-center.mb-4
         h1.text-uppercase #{dataCamPam[1]}
         h3.text-success $ #{dataCamPam[2]}
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repellat ut temporibus omnis, quasi illum at enim maxime consequatur pariatur necessitatibus, libero soluta. Debitis maxime labore esse, sequi nisi sunt.
@@ -43,7 +43,7 @@ mixin CamPam
           img(src="public/img/cam-pam/campamSO.png", alt="").w-100
     .row.mb-4
       h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalación
-    .row
+    .row.mb-5
       .col-lg-12
         ul.treeContainer
           +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')

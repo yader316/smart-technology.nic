@@ -1,0 +1,16 @@
+extends include/template
+append config 
+  -siteName = 'Camaras V2'
+prepend styles
+  //- estilo de la comparacion de imagen 
+  link(rel="stylesheet", href="public/css/twentytwenty.css")
+block content
+  //- se coloca la imagne que ba en el banner y la position
+  +Header('fondoCamV2.png')
+  +WyzeCam('white')
+  +Footer
+append script
+  script(src="public/js/imgCompare/jquery.event.move.js")
+  script(src="public/js/imgCompare/jquery.twentytwenty.js")
+  script(src="public/js/imgCompare/imgComparation.js")
+  script(src="public/js/sliderProduct.js")

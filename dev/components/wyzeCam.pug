@@ -1,6 +1,6 @@
 mixin WyzeCam(colorPhoto)
   .container
-    .row.flex-column-reverse.flex-lg-row-reverse.mb-4
+    .row.flex-column-reverse.flex-lg-row-reverse.mb-4.sectionContainer
       .col-lg-6.col-md-12
           +SliderProduct(colorPhoto)
       .col-lg-6.col-md-12.pt-5.align-self-center
@@ -49,7 +49,7 @@ mixin WyzeCam(colorPhoto)
       .dropdown-divider.mb-5
     .row.mb-4
       h1.bg-dark.p-4.text-white.text-center.text-capitalize.w-100 instalación
-    .row
+    .row.pb-5
       .col-lg-12
         ul.treeContainer
           +BranchesContainer('wyzeapp.png','Paso 1','descargar la app de WYZE','En playstore para andrio y Appstore para apple','left')

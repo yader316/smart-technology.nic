@@ -10,26 +10,38 @@ block content
   section.mt-5.mb-5
     h1.text-capitalize.text-center.p-4.bg-dark.text-white camaras de seguridad
   .container
+    //- extraemos los datos
+    -var datacam = dataCardProduct[0];
+    -var dataPam = dataCardProduct[1];
+    -var dataCamBlack = dataCardProduct[5];
+   
     .row
-      .col-12
-        div(role="tabpanel")
-          ul.nav.nav-tabs.flex-column.flex-sm-row(role="tablist")
-            li.nav-item(role="presentation")
-              a.nav-link.tabs-link.active(href="#wyzeCam" aria-controls="wyzeCam" data-toggle="tab" role="tab").text-uppercase camara inteligente v2.
-            li.nav-item(role="presentation")
-              a.nav-link.tabs-link(href="#wyzeCamBlack" aria-controls="wyzeCamBlack" data-toggle="tab" role="tab").text-uppercase camara inteligente v2. negro
-            li.nav-item(role="presentation") 
-              a.nav-link.tabs-link(href="#wyzeCamPam" aria-controls="wyzeCamPam" data-toggle="tab" role="tab").text-uppercase camara inteligente cam pam
-          .tab-content.tabsBorder
-            div.pt-4.pb-4(role="tabpanel" class="tab-pane active" id='wyzeCam')
-              +WyzeCam('white')
-            div.pt-4.pb-4(role="tabpanel" class="tab-pane" id='wyzeCamBlack' style=`background-color: black; color: white`)
-              +WyzeCam('black')
-            div.pt-4.pb-4(role="tabpanel" class="tab-pane" id='wyzeCamPam')
-              +CamPam
-  +Footer
-append script
-  script(src="public/js/imgCompare/jquery.event.move.js")
-  script(src="public/js/imgCompare/jquery.twentytwenty.js")
-  script(src="public/js/imgCompare/imgComparation.js")
-  script(src="public/js/sliderProduct.js")
+      .col-md-4.col-12.mb-5
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${datacam[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{datacam[1]}
+              p.card-text $ #{datacam[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${datacam[3]}`) leer mas        
+      .col-md-4.col-12.mb-5
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${dataPam[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataPam[1]}
+              p.card-text $ #{dataPam[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataPam[3]}`) leer mas        
+      .col-md-4.col-12.mb-5
+        .card-deck.h-100
+          .card
+            img.card-img-top(src=`public/img/${dataCamBlack[0]}`, alt="")
+            .card-body
+              h5.card-title.text-capitalize #{dataCamBlack[1]}
+              p.card-text $ #{dataCamBlack[2]}
+            .card-footer.d-flex.justify-content-end
+              button.btn.btn-outline-info.btn-block.text-capitalize(data-toggle="modal" data-target=`${dataCamBlack[3]}`) leer mas
+  +ModalProduct
+  +Footer 

@@ -115,3 +115,25 @@
     background-image: url('public/img/enchufe/fondoColor');
   }
 }
+
+// Large devices (desktops, less than 1200px) lg
+@media (max-width:'1200px'){
+
+}
+// Medium devices (tablets, less than 992px) md
+@media (max-width:'992px'){
+ .sectionContainer{
+    margin-top: 4rem;
+ }
+ .showContainer{
+    &__title{
+      margin-top: 3.5rem;
+    }
+  }
+}
+// Small devices (landscape phones, less than 768px) sm
+@media (max-width:'768px'){
+}
+// Extra small devices (portrait phones, less than 576px) xs
+@media (max-width:'576px'){
+}

@@ -1,0 +1,24 @@
+.service{
+  &__title{
+    padding-bottom: 5px;
+    background-image: linear-gradient(#aba7a3,#808080);
+    background: {
+      position: center 100%;
+      repeat: no-repeat;
+      size: 30% 3px;
+    }
+  }
+  // &__wraper{
+  //   padding: 32px 0 278px;
+  //   position: relative;
+  //   background-image: url('../img/linea1.png');
+  //   background: {
+  //     size: calc(100% + 3px);
+  //     position: bottom -3px left -3px;
+  //     repeat: no-repeat;
+  //   }
+  // }
+  // &__two{
+  //   background-color: #212529;
+  // }
+}

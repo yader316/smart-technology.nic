@@ -23,7 +23,7 @@
 .carousel-indicators li{
   background-color: #3c4043!important;
 }
-//- tabs de la camaras y sensores
+//- tabs de los sensores
 .tabs-link{
   color: #495057;
   &:hover{
@@ -37,6 +37,7 @@
 .tabsBorder{
   border: .5px solid #dee2e6;
 }
+
 // tree
 @import "components/tree/treeContainer";
 // header
@@ -57,6 +58,7 @@
 @import "components/catalogo";
 @import "components/senseMovim";
 @import "components/wyzeCamPam";
+@import "components/service";
 
 // adatando el logo title al header
 @media (max-width:'1199px'){
@@ -107,6 +109,16 @@
       };
     }
   }
+  .sectionContainer,
+  .service{
+    margin-top: 5rem;
+  }
+  .showContainer{
+    &__title{
+      margin-top: 3.5rem;
+    }
+  }
+  
 }
 
 @media (max-width:'767px'){
@@ -115,25 +127,28 @@
     background-image: url('public/img/enchufe/fondoColor');
   }
 }
-
-// Large devices (desktops, less than 1200px) lg
-@media (max-width:'1200px'){
-
-}
-// Medium devices (tablets, less than 992px) md
-@media (max-width:'992px'){
- .sectionContainer{
-    margin-top: 4rem;
- }
- .showContainer{
+// Extra small devices (portrait phones, less than 576px) xs
+@media (max-width:'576px'){
+  .service{
     &__title{
-      margin-top: 3.5rem;
+      font-size: 2.5rem;
+      background: {
+        size: 70% 3px;
+      };
+    }
+    &__subtitle{
+      text-align: center;
     }
   }
 }
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width:'1200px'){
+
+// }
+// Medium devices (tablets, less than 992px) md
+// @media (max-width:'992px'){
+ 
+// }
 // Small devices (landscape phones, less than 768px) sm
-@media (max-width:'768px'){
-}
-// Extra small devices (portrait phones, less than 576px) xs
-@media (max-width:'576px'){
-}
+// @media (max-width:'768px'){
+// }

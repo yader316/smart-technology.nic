@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="description" content="Smart Technology el mejor distribudor de productos inteligentes, con la mejor calidad. Y la asesoria en sistemas fotovoltaico"/>
-  <title>Smart Techonolgy - Camaras de seguridad</title>
+  <title>Camaras de seguridad | Smart Techonolgy</title>
   <link rel="shortcut icon" href="public/img/favicon-smart-home.png" type="image/x-icon"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
@@ -13,82 +13,318 @@
 </head>
 <body class="body-container">
   <div class="scroll-top" onclick="topFunction()" id="myBtn"><i class="fa fa-chevron-up scroll-top__img"> </i></div>
-  <header class="headerContainer">
-    <div class="headerContainer__banner position-relative d-none d-lg-block" style="background-image: url('public/img/bannerCam.png'); background-position: center">
-      <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt="logo"/></div>
-    </div>
-    <div class="headerContainer__navContainer"> 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="index.html"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbar-1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
-            <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="camaras.html">camaras de seguridad</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="sensores.html">sensores</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="enchufes.html">enchufe inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="bombillo.html">bombillos inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">accesorios</a></div>
-            </li>
-            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="service.html">Servicios </a></li>
-            <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
-            <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
-            <div class="content-search">
-              <div class="content-table">
-                <table id="table">
-                  <thead>
-                    <tr>
-                      <td></td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="camV2.html">camara cam v2</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="camaras.html">camaras de seguridad</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="sensores.html">sensores</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">enchufe inteligentes</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="camV2Black.html">camara cam v2 black</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="camPan.html">camara cam pam</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="bombillo.html">bombillos inteligentes</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">tomacorrientes</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="enchufesKMC.html">tomacorrientes KMC</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="enchufesGosund.html">tomacorrientes Gosund</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="enchufesWyze.html">tomacorrientes Wyze</a></td>
-                    </tr>
-                    <tr>
-                      <td class="content-items"><a class="content-link text-capitalize" href="service.html">servicios</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+  <div class="d-none d-lg-block">
+    <header class="headerContainer">
+      <div class="headerContainer__banner position-relative" style="background-image: url('public/img/bannerCam.png'); background-position: center">
+        <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt="logo"/></div>
+      </div>
+      <div class="headerContainer__navContainer"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="index.html"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbar-1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
+              <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="camaras.html">camaras de seguridad</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="sensores.html">sensores</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="enchufes.html">enchufe inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="bombillo.html">bombillos inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">accesorios</a></div>
+              </li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="service.html">Servicios </a></li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+              <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
+              <div class="content-search position-relative">
+                <div class="content-table position-absolute">
+                  <table id="table">
+                    <thead>
+                      <tr>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2.html">camara cam v2</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camaras.html">camaras de seguridad</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="sensores.html">sensores</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">enchufe inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2Black.html">camara cam v2 black</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camPan.html">camara cam pam</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="bombillo.html">bombillos inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">tomacorrientes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesKMC.html">tomacorrientes KMC</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesGosund.html">tomacorrientes Gosund</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesWyze.html">tomacorrientes Wyze</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="service.html">servicios</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-      </nav>
-    </div>
-  </header>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="d-none d-md-block d-lg-none">
+    <header class="headerContainer">
+      <div class="headerContainer__banner position-relative" style="background-image: url('public/img/undefined'); background-position: center">
+        <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt="logo"/></div>
+      </div>
+      <div class="headerContainer__navContainer"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="index.html"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbar-1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
+              <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="camaras.html">camaras de seguridad</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="sensores.html">sensores</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="enchufes.html">enchufe inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="bombillo.html">bombillos inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">accesorios</a></div>
+              </li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="service.html">Servicios </a></li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+              <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
+              <div class="content-search position-relative">
+                <div class="content-table position-absolute">
+                  <table id="table">
+                    <thead>
+                      <tr>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2.html">camara cam v2</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camaras.html">camaras de seguridad</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="sensores.html">sensores</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">enchufe inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2Black.html">camara cam v2 black</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camPan.html">camara cam pam</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="bombillo.html">bombillos inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">tomacorrientes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesKMC.html">tomacorrientes KMC</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesGosund.html">tomacorrientes Gosund</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesWyze.html">tomacorrientes Wyze</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="service.html">servicios</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="d-none d-sm-block d-md-none d-lg-none">
+    <header class="headerContainer">
+      <div class="headerContainer__banner position-relative" style="background-image: url('public/img/undefined'); background-position: center">
+        <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt="logo"/></div>
+      </div>
+      <div class="headerContainer__navContainer"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="index.html"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbar-1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
+              <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="camaras.html">camaras de seguridad</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="sensores.html">sensores</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="enchufes.html">enchufe inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="bombillo.html">bombillos inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">accesorios</a></div>
+              </li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="service.html">Servicios </a></li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+              <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
+              <div class="content-search position-relative">
+                <div class="content-table position-absolute">
+                  <table id="table">
+                    <thead>
+                      <tr>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2.html">camara cam v2</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camaras.html">camaras de seguridad</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="sensores.html">sensores</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">enchufe inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2Black.html">camara cam v2 black</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camPan.html">camara cam pam</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="bombillo.html">bombillos inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">tomacorrientes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesKMC.html">tomacorrientes KMC</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesGosund.html">tomacorrientes Gosund</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesWyze.html">tomacorrientes Wyze</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="service.html">servicios</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="d-block d-sm-none d-md-none d-lg-none">
+    <header class="headerContainer">
+      <div class="headerContainer__banner position-relative" style="background-image: url('public/img/undefined'); background-position: center">
+        <div class="headerContainer__backgroundContainer position-absolute"><img class="headerContainer__img position-absolute d-none d-lg-block" src="public/img/logo-smart.png" alt="logo"/></div>
+      </div>
+      <div class="headerContainer__navContainer"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container"><a class="navbar-brand visibleLogo" href="index.html"><img class="headerContainer__imgLogo-title" src="public/img/logo-smart-title.png" alt="logo"/></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-1"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbar-1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="index.html">inicio </a></li>
+              <li class="nav-item dropdown"> <a class="text-capitalize nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Productos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="catalogo.html">catalogo</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="camaras.html">camaras de seguridad</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="sensores.html">sensores</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="enchufes.html">enchufe inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="bombillo.html">bombillos inteligentes</a><a class="itemsMenu__dropdown dropdown-item text-capitalize" href="#">accesorios</a></div>
+              </li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="service.html">Servicios </a></li>
+              <li class="nav-item"><a class="undefined itemsMenu__items nav-link text-capitalize" href="#">Sobre nosotro </a></li>
+              <li class="nav-item"><a class="js-scroll-trigger itemsMenu__items nav-link text-capitalize" href="#contact">Contactenos </a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar aqui" aria-label="Search" autocomplete="off" id="input-search"/>
+              <div class="content-search position-relative">
+                <div class="content-table position-absolute">
+                  <table id="table">
+                    <thead>
+                      <tr>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="catalogo.html">catalogo</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2.html">camara cam v2</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camaras.html">camaras de seguridad</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="sensores.html">sensores</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">enchufe inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camV2Black.html">camara cam v2 black</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="camPan.html">camara cam pam</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="bombillo.html">bombillos inteligentes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufes.html">tomacorrientes</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesKMC.html">tomacorrientes KMC</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesGosund.html">tomacorrientes Gosund</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="enchufesWyze.html">tomacorrientes Wyze</a></td>
+                      </tr>
+                      <tr>
+                        <td class="content-items"><a class="content-link text-capitalize" href="service.html">servicios</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
   <section class="mt-5 mb-5">
     <h1 class="text-capitalize text-center p-4 bg-dark text-white">camaras de seguridad</h1>
   </section>

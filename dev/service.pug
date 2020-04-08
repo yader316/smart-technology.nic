@@ -4,30 +4,30 @@ append config
 prepend styles
   //- link
 block content
-  //- se coloca la imagne que ba en el banner y la position
-  +Header('algo.jpg')
+  //- se coloca las tres imagen primero va desktop, tablet, mobil
+  +Header('banneriglesia.jpg','fondoBulb.jpg','fonoMobilHome.png')
   .service.container.mb-4
     .service__title.display-4.text-center.mt-5.mb-3 Smart Servicios
     p.text-center En Smart Techology ofrecemos un diagnostico energetico, adaptándonos a cada cliente y personalizando nuestro trabajo a las necesidades y objetivos de todo tipo de empresas o zona rurales, cumpliendo con la normativa.
   //- .service__wraper
   .container
     .row.flex-column-reverse.flex-md-row
-      .col-md-6.col-12.mb-4.align-self-center
+      div(data-aos="fade-right").col-md-6.col-12.mb-4.align-self-center
         h2.service__subtitle.text-capitalize.mb-3 diagnostico energeticos
         p.mb-3 El diagnosticos consta con una duración aproximadamente de una semana, lo cual nos permite entregarles  conclusiones y recomendaciones de mejoras, lo que le permitirá empezar a realizar aquellas actuaciones más inmediatas o de mayor retorno de la inversión, o como paso previo para abordar una auditoria más profunda.
         h2.service__subtitle.text-success Precio: $ 60.00 #[span.text-dark (sesenta dólares)]
-      .col-md-6.col-12.mb-4
-        img(src="public/img/diagnostico-energetico.png", alt="diagnostico energetico").w-100
+      div(data-aos="fade-left").col-md-6.col-12.mb-4
+        img(src="public/img/diagnostico-energetico.png", alt="diagnostico energetico" ).w-100
     .row
-      .col-md-6.col-12.mb-4
+      div(data-aos="fade-right").col-md-6.col-12.mb-4
         img(src="public/img/delivery.jpg", alt="").w-100
-      .col-md-6.col-12.mb-4.align-self-center
+      div(data-aos="fade-left").col-md-6.col-12.mb-4.align-self-center
         h2.service__subtitle.text-capitalize.mb-3 Distribución de Productos.
         p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, officiis deleniti voluptates ex deserunt earum veritatis dolores iusto eum aspernatur voluptas obcaecati inventore laborum odio consequatur! Dolorum sequi cum perferendis.
     .row.flex-column-reverse.flex-md-row
-      .col-md-6.col-12.mb-4.align-self-center
+      div(data-aos="fade-right").col-md-6.col-12.mb-4.align-self-center
         h2.service__subtitle.text-capitalize.mb-3 construcción de paginas web.
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis cum consectetur sed, cupiditate ab ad incidunt libero aliquid, enim ut omnis distinctio esse eum, at voluptates eligendi fugit accusamus!
-      .col-md-6.col-12.mb-4
+      div(data-aos="fade-left").col-md-6.col-12.mb-4
         img(src="public/img/construccionWeb.png", alt="").w-100
   +Footer

@@ -957,55 +957,49 @@
   }
   /* line 625, dev/sass/style.css */
   .headerContainer__navContainer {
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 99;
   }
-  /* line 630, dev/sass/style.css */
+  /* line 628, dev/sass/style.css */
   .headerContainer__logoBanner {
     left: 20px;
     bottom: 20px;
   }
-  /* line 633, dev/sass/style.css */
+  /* line 631, dev/sass/style.css */
   .content-search {
-    top: 299px;
+    top: 0;
   }
-  /* line 635, dev/sass/style.css */
-  .position-search-table {
-    top: 312px;
-  }
-  /* line 637, dev/sass/style.css */
+  /* line 633, dev/sass/style.css */
   .content-table {
     width: 80%;
   }
-  /* line 639, dev/sass/style.css */
+  /* line 635, dev/sass/style.css */
   .contactContainer {
     padding: 50px 0;
   }
-  /* line 641, dev/sass/style.css */
+  /* line 637, dev/sass/style.css */
   .contactContainer__subheading {
     margin-bottom: 40px;
   }
-  /* line 643, dev/sass/style.css */
+  /* line 639, dev/sass/style.css */
   .footerContainer__title {
     text-align: center;
     padding-bottom: 10px;
     background-size: 100% 3px;
   }
-  /* line 647, dev/sass/style.css */
+  /* line 643, dev/sass/style.css */
   .sectionContainer,
   .service {
     margin-top: 5rem;
   }
-  /* line 650, dev/sass/style.css */
+  /* line 646, dev/sass/style.css */
   .showContainer__title {
     margin-top: 3.5rem;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 654, dev/sass/style.css */
+  /* line 650, dev/sass/style.css */
   .paragraphContent {
     width: 100%;
     background-image: url("public/img/enchufe/fondoColor");
@@ -1013,12 +1007,12 @@
 }
 
 @media (max-width: 576px) {
-  /* line 659, dev/sass/style.css */
+  /* line 655, dev/sass/style.css */
   .service__title {
     font-size: 2.5rem;
     background-size: 70% 3px;
   }
-  /* line 662, dev/sass/style.css */
+  /* line 658, dev/sass/style.css */
   .service__subtitle {
     text-align: center;
   }

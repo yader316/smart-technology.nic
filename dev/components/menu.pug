@@ -1,13 +1,18 @@
-mixin Menu(clases)
-  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container
-    a.navbar-brand(href="index.html" class=`${clases}`)
-      img(src="public/img/logo-smart-title.png" alt="logo").headerContainer__imgLogo-title
-    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
-    .collapse.navbar-collapse#navbar-1
-      ul.navbar-nav.mr-auto
-        +Items('inicio','index.html')
-        +ItemsDropdown
-        +Items('Servicios','service.html')
-        +Items('Sobre nosotro','#')
-        +Items('Contactenos','#contact','js-scroll-trigger')
-      +Search
+mixin Menu(image)
+  header.headerContainer
+    div(style=`background-image: url('public/img/${image}'); background-position: center`).headerContainer__banner.position-relative
+      .headerContainer__backgroundContainer.position-absolute
+        img.headerContainer__img.position-absolute(src=`public/img/logo-smart.png`, alt="logo").d-none.d-lg-block
+    .headerContainer__navContainer 
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.container
+        a.navbar-brand(href="index.html" class=`visibleLogo`)
+          img(src="public/img/logo-smart-title.png" alt="logo").headerContainer__imgLogo-title
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
+        .collapse.navbar-collapse#navbar-1
+          ul.navbar-nav.mr-auto
+            +Items('inicio','index.html')
+            +ItemsDropdown
+            +Items('Servicios','service.html')
+            +Items('Sobre nosotro','#')
+            +Items('Contactenos','#contact','js-scroll-trigger')
+          +Search

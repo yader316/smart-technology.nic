@@ -60,6 +60,10 @@
 @import "components/wyzeCamPam";
 @import "components/service";
 
+// Large devices (desktops, less than 1200px) lg
+// @media (max-width:'1200px'){
+
+// }
 // adatando el logo title al header
 @media (max-width:'1199px'){
   .headerContainer{
@@ -68,15 +72,15 @@
     }
   }
 }
-
+// Medium devices (tablets, less than 992px) md
 @media (max-width:'991px'){
   .visibleLogo{
     display: block;
   }
   .headerContainer{
     &__navContainer{
-      position: fixed;
-      top: 0;
+      // position: fixed;
+      // top: 0;
       width: 100%;
       z-index: 99;
     }
@@ -86,11 +90,11 @@
     }
   }
   .content-search{
-    top: 299px;
+    top: 0;
   }
-  .position-search-table{
-    top: 312px;
-  }
+  // .position-search-table{
+  //   top: 293px;
+  // }
   .content-table{
     width: 80%;
   }
@@ -120,6 +124,7 @@
   }
   
 }
+// Small devices (landscape phones, less than 767.9px) sm
 
 @media (max-width:'767px'){
   .paragraphContent{
@@ -141,14 +146,3 @@
     }
   }
 }
-// Large devices (desktops, less than 1200px) lg
-// @media (max-width:'1200px'){
-
-// }
-// Medium devices (tablets, less than 992px) md
-// @media (max-width:'992px'){
- 
-// }
-// Small devices (landscape phones, less than 768px) sm
-// @media (max-width:'768px'){
-// }

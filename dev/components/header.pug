@@ -1,9 +1,9 @@
-mixin Header(image)
-  header.headerContainer
-    div(style=`background-image: url('public/img/${image}'); background-position: center`).headerContainer__banner.position-relative.d-none.d-lg-block
-      .headerContainer__backgroundContainer.position-absolute
-        img.headerContainer__img.position-absolute.d-none.d-lg-block(src=`public/img/logo-smart.png`, alt="logo")
-    .headerContainer__navContainer 
-      //-  se le agrega una clase para ver el logo title visible al momento que se
-      //- hace scroll hacia abajo.
-      +Menu('visibleLogo')
+mixin Header(image,image1,image2,image3)
+  .d-none.d-lg-block
+    +Menu(image)
+  .d-none.d-md-block.d-lg-none
+    +Menu(image1)
+  .d-none.d-sm-block.d-md-none.d-lg-none
+    +Menu(image2)
+  .d-block.d-sm-none.d-md-none.d-lg-none
+    +Menu(image3)

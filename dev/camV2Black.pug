@@ -5,8 +5,8 @@ prepend styles
   //- estilo de la comparacion de imagen 
   link(rel="stylesheet", href="public/css/twentytwenty.css")
 block content
-  //- se coloca la imagne que ba en el banner y la position
-  +Header('fondoCamV2Black.png')
+  //- se coloca las tres imagen primero va desktop, tablet, mobil, mobilpequexo
+  +Header('fondoCamV2Black.png','fondoCamV2BlackTablet.png','fondoCamV2BlackMobil.png','fondoCamV2BlackMobilPequexo.png')
   div(style=`background-color: black; color: white`)
     +WyzeCam('black')
   +Footer
